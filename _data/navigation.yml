@@ -1,18 +1,18 @@
 main:
   - title: "Project Introduction"
-    url: /introduction/
-    children: 
+    url: "/introduction/"
+    children:
       - title: "Machine Learning"
-        url: /introduction/machinelearning/
+        url: "/introduction/machinelearning/"
       - title: "Data Mining"
-        url: /introduction/datamining/
+        url: "/introduction/datamining/"
       - title: "Statistical Methods"
-        url: /introduction/stats/
+        url: "/introduction/stats/"
   - title: "Data Cleaning/Exploration"
-    url: /cleaning/
+    url: "/cleaning/"
   - title: "ML Models"
-    url: /models/
+    url: "/models/"
   - title: "Results"
-    url: /results/
+    url: "/results/"
   - title: "About"
-    url: /about/
+    url: "/about/"
