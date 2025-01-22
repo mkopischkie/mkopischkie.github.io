@@ -1,6 +1,6 @@
 ---
-title: "Project Introduction"
+title: "Machine Learning Project Introduction"
 #layout: categories
-permalink: /introduction/
+permalink: /introduction/machinelearning/
 #author_profile: true
 ---
