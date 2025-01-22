@@ -1,6 +1,6 @@
 ---
-permalink: /presentations/
-title: "Presentations"
+permalink: /cleaning/
+title: "Data Cleaning/Exploration"
 ---
 
 These are my presentations: 
