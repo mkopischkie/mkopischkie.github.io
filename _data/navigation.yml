@@ -1,7 +1,7 @@
-main:
+nav:
   - title: "Project Introduction"
     url: "/introduction/"
-    children:
+    submenu:
       - title: "Machine Learning"
         url: "/introduction/machinelearning/"
       - title: "Data Mining"
