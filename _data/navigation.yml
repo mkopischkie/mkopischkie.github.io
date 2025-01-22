@@ -1,9 +1,11 @@
 main:
-  - title: "Presentations"
-    url: /presentations/
-  - title: "Projects"
-    url: /projects/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Publications"
-    url: /publications/
+  - title: "Project Introduction"
+    url: /introduction/
+  - title: "Data Cleaning/Exploration"
+    url: /cleaning/
+  - title: "ML Models"
+    url: /models/
+  - title: "Results"
+    url: /results/
+  - title: "About"
+    url: /about/
