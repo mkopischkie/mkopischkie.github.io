@@ -1,8 +1,8 @@
 ---
 title: "Machine Learning Project Introduction"
-#layout: categories
+layout: single
 permalink: /introduction/machinelearning/
-#author_profile: true
+author_profile: true
 ---
 
 content
