@@ -6,8 +6,7 @@ layout: single
 author_profile: true
 ---
 
-header:
-  image: /assets/images/header.jpg
+![Creation of Adam](/assets/images/header.jpg)
 
 This portfolio showcases a selection of coding projects I've worked on during my graduate studies. I hold a BS in Biophysics and am currently pursuing an MS in Data Science at the University of Colorado - Boulder. The website tabs feature my current project, developed in Python, as part of my Machine Learning coursework.
 
