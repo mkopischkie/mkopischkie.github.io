@@ -8,7 +8,7 @@ classes: wide
 header_image: /assets/images/header.jpg
 ---
 
-<img src="{{ page.header_image }}" alt="Header Image" style="width: 100%; height: 100px; object-fit: cover;">
+<img src="{{ page.header_image }}" alt="Header Image" style="width: 100%; height: 300px; object-fit: cover;">
 
 
 This portfolio showcases a selection of coding projects I've worked on during my graduate studies. I hold a BS in Biophysics and am currently pursuing an MS in Data Science at the University of Colorado - Boulder. The website tabs feature my current project, developed in Python, as part of my Machine Learning coursework.
