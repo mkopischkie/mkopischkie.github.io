@@ -1,6 +1,8 @@
 ---
 title: "Results"
 permalink: /results/
-#layout: posts
-#author_profile: true
+layout: single
+classes: wide
 ---
+
+No content here :)
