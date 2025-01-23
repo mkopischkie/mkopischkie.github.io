@@ -5,4 +5,4 @@ layout: single
 classes: wide
 ---
 
-Content to come :)
+Content coming soon :)
