@@ -15,7 +15,7 @@ This portfolio showcases a selection of coding projects I've worked on during my
 
 As part of my graduate program, I've taken courses in data mining, statistics, machine learning, and big data architecture, with upcoming classes in deep learning and natural language processing. I will graduate in December 2025 and am excited to continue growing my expertise while sharing select projects here.
 
-Additional group and individual projects are listed below, with further details available in the GitHub repository linked to my profile.
+Additional group and individual projects are listed below, with further details, and additional projects/assignments, available in the GitHub repository linked to my profile.
 - Data Mining: Predicting the Success of Start-Up Companies in the Information and Technology Space
   [Website](https://wihi1131.github.io/Data-Mining-Project/)
 - Statistical Methods 1: Principal Component Analysis (PCA) By Hand and Application in Python
