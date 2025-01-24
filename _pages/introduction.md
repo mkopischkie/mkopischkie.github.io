@@ -15,7 +15,7 @@ This particular study that was conducted by Dr. Mazmanian indicates that the fut
 
 
 
-Questions to Guide the Research: 
+**Questions to Guide the Research:** 
 
 1. How do factors such as Body Mass Index (BMI), sex, age, and residence affect the gut microbiome?
 2. Does a particular BMI, sex, age, or residence indicate a higher susceptibility for a particular disease or condition?
