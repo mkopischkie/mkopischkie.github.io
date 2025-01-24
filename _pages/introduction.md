@@ -13,9 +13,9 @@ In a TEDMED talk given by Dr. Mazmanian, called Why Science Says to Listen to Yo
 
 This particular study that was conducted by Dr. Mazmanian indicates that the future of medicine may rely on the gut, rather than the brain. The gut can trigger an event where microbes can pass the blood-brain barrier, directly altering the neurons, whereas only a small portion of prescribed oral medicine actually reaches the brain. Only 1% of the drug Prozac, often used to treat anxiety, actually gets into the brain to boost serotonin. Dr. Manzanian claims that delivering drugs to the gut, rather than to the brain, will be more efficient as the gut already has a direct link and can cross the blood brain barrier. 
 
-Robertson, R. (2023, April 3). How does your gut microbiome impact your overall health? Healthline. [](https://www.healthline.com/nutrition/gut-microbiome-and-health#TOC_TITLE_HDR_4)
-Cleveland Clinic. (n.d.). The gut-brain connection. Cleveland Clinic. [](https://my.clevelandclinic.org/health/body/the-gut-brain-connection)
-Johns Hopkins Medicine. (n.d.). The brain-gut connection. Johns Hopkins Medicine. [](https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-brain-gut-connection)
+- Robertson, R. (2023, April 3). How does your gut microbiome impact your overall health? Healthline. [https://www.healthline.com/nutrition/gut-microbiome-and-health#TOC_TITLE_HDR_4](https://www.healthline.com/nutrition/gut-microbiome-and-health#TOC_TITLE_HDR_4)
+- Cleveland Clinic. (n.d.). The gut-brain connection. Cleveland Clinic. [https://my.clevelandclinic.org/health/body/the-gut-brain-connection](https://my.clevelandclinic.org/health/body/the-gut-brain-connection)
+- Johns Hopkins Medicine. (n.d.). The brain-gut connection. Johns Hopkins Medicine. [https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-brain-gut-connection](https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-brain-gut-connection)
 
 Questions to Guide the Research: 
 
