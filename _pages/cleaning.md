@@ -25,6 +25,8 @@ classes: wide
 
 ### Condition - Related Plots 
 
+![Schizophrenia Associated Conditions](/assets/images/schizophrenia_associated_conditions_count.jpg) 
+
 ![Bipolar Associated Conditions](/assets/images/bipolar_associated_conditions_count.jpg) 
 
 ![Epilepsy Associated Conditions](/assets/images/epilepsy_associated_conditions_count.jpg) 
