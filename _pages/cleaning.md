@@ -116,3 +116,11 @@ With this new filtered data frame, I converted the Mesh IDs to a column titled C
 ![Epilepsy Associated Conditions](/assets/images/epilepsy_associated_conditions_count.jpg) 
 
 ![Depression Associated Conditions](/assets/images/depression_associated_conditions_count.jpg) 
+
+### Word Clouds
+
+![Word Cloud](/assets/images/wordcloud.jpg)
+
+### Overlayed Plots
+
+![Overlay](/assets/images/overlay.jpg)
