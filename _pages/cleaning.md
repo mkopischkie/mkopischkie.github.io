@@ -55,7 +55,37 @@ I repeat this same process for males and females with the phenotypes I specified
 
 ## Cleaning
 
-Steps taken coming soon :)
+I will walk through the cleaning process using the male schizophrenia data frame I completed while walking through the data collection. After reading in the data frame, I used the df.isnull().sum() command to check for NaN's in each column. No column had NaN values, so I used the df.unique() command to check for outliers for the BMI, Age, and Country. With other data frames that were larger, I used the df.describe() command to check for outliers at the minimum and maximum values. The BMI column had a couple outliers, so I filtered out the outliers, calculated the median BMI for the remaining samples, and replaced the outliers with the median. I filtered out BMI values less than 15 and over 50 because my age range was between early teenagers and elders. Initially, I tried to make a better guess for the replacement, but with only Age and Country as additional parameters, I didn't want to make any unnecessary assumptions, skewing the data further. 
+
+*insert image 
+
+Next, I used the df.unique() and df.describe() commands to check for outliers in the Age column, and found an age listed as zero. Although it's possible for a baby to have schizophrenia, I confirmed within the GMrepo website that ages listed as 0 also had an "na" beside it. So, I filtered out the 0 age, took the median of the remaining values, and replaced the zero with the median. 
+
+*insert image 
+
+Then, I used the df.unique() command on the Country column to check if there were zeros there too and only found the expected answers, so no cleaning had to be done to this column. 
+
+The Mesh ID column represents the medical ID for other disorders/conditions that the individual may have. I made a dictionary to serve as a key between the ID and the medical terminology to make reading the data frame simpler. 
+
+*insert image
+
+The ID for schizophrenia is D012559, but there were additional conditions/disorders that patients reported as well. By turning the Mesh ID column into a flattened series and finding the unique values, I could use the dictionary to see the list of conditions/disorders that patients with schizophrenia reported. 
+
+*insert image
+
+From this information, I created two data frames, one with the Mesh IDs, and the other with the Condition listed out. But first, I wanted to narrow down the bacteria so that the final data frame would hold the most prevalent bacteria. I experimented with the df.value_counts() function and realized that most bacteria only occurred in a hand-full of samples. I filtered these out by summing the number of times that zero occurred for each genus of bacteria. 
+
+*insert image
+
+I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, zero occurred more times than the threshold allowed. 
+
+*insert image 
+
+I saved the new data frame with the most prevalent bacteria genus' as a .csv file for later use.
+
+*insert image
+
+With this new filtered data frame, I converted the Mesh IDs to a column titled Condition, where the IDs were replaced with the medical condition/disorder. This required reformatting the Mesh IDs, using the dictionary as a key, and applying the replacement to the Mesh ID column. A snippet of the clean data frame with conditions listed, rather than Mesh IDs, is attached below. 
 
 ## Visualizations 
 
