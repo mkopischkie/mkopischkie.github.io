@@ -27,7 +27,7 @@ From that file, I could embed the API in a for loop so that it would pull all th
 
 ![Second](/assets/images/secondcode.jpg) 
 
-The if statement within the for loop is telling my computer that if a Run ID does not have any genus information available, to skip that particular sample. At this point, printing the genus outputs a data frame corresponding to the first Run ID. It contains information related to the scientific name of the bacteria found in the sample and the relative abundance. Since the Taxon ID, Rank Level, and Loaded UID are redundant, I drop them from the genus data frame. Eventually, I want this data frame to have the column titles as the scientific names and the first row as the Run ID so that a row represents a sample with a unique Run ID and the relative abundances for the corresponding bacteria. With this in mind, I change the column names and drop any duplicate scientific names. So now my code looks like this: 
+The if statement within the for loop is telling my computer that if a Run ID does not have any genus information available, to skip that particular sample. At this point, printing the genus outputs a data frame corresponding to the first Run ID. It contains information related to the scientific name of the bacteria found in the sample and the relative abundance. Since the Taxon ID, Rank Level, and Loaded UID are redundant, I drop them from the genus data frame. Eventually, I want this data frame to have the column titles as the scientific names and the first column containing the Run IDs so that a row represents a sample with a unique Run ID and the relative abundances for the corresponding bacteria. With this in mind, I change the column names and drop any duplicate scientific names. So now my code looks like this: 
 
 ![Third](/assets/images/thirdcode.jpg) 
 
@@ -47,7 +47,7 @@ As I stated earlier, I want the Run IDs listed as the first column, so I need to
 
 ![Seventh](/assets/images/seventhcode.jpg) 
 
-I merge the two rows together based on matching Run ID columns, then concatenate so that each row has a unique Run ID and I'm left with a data frame of all the Run IDs and corresponding information for males with schizophrenia. 
+I merge the health and genus data frames together based on matching unique Run IDs from the Run ID column. Then I concatenate so that each row has a unique Run ID and I'm left with a data frame of all the Run IDs and corresponding information for males with schizophrenia. 
 
 ![Eighth](/assets/images/eighthcode.jpg) 
 
@@ -55,11 +55,11 @@ I repeat this same process for males and females with the phenotypes I specified
 
 ## Cleaning
 
-I will walk through the cleaning process using the male schizophrenia data frame I completed while walking through the data collection. After reading in the data frame, I used the df.isnull().sum() command to check for NaN's in each column. No column had NaN values, so I used the df.unique() command to check for outliers for the BMI, Age, and Country. With other data frames that were larger, I used the df.describe() command to check for outliers at the minimum and maximum values. The BMI column had a couple outliers, so I filtered out the outliers, calculated the median BMI for the remaining samples, and replaced the outliers with the median. I filtered out BMI values less than 15 and over 50 because my age range was between early teenagers and elders. Initially, I tried to make a better guess for the replacement, but with only Age and Country as additional parameters, I didn't want to make any unnecessary assumptions, skewing the data further. 
+I will walk through the cleaning process using the male schizophrenia data frame I completed while walking through the data collection. After reading in the data frame I created from the data gathering step, I used the df.isnull().sum() command to check for NaN's in each column. No column had NaN values in this example, so I used the df.unique() command to check for outliers for the BMI, Age, and Country. With other data frames that were larger, I used the df.describe() command to check for outliers at the minimum and maximum values. The BMI column had a couple outliers, so I filtered out the outliers, calculated the median BMI for the remaining samples, and replaced the outliers with the median. I excluded the BMI values less than 15 and over 50 from my filter because the age range was between early teenagers and elders. Initially, I tried to make a better guess for the replacement, but with only Age and Country as additional parameters, I didn't want to make any unnecessary assumptions, skewing the data further. 
 
 ![BMI](/assets/images/bmi_unique.jpg) 
 
-Next, I used the df.unique() and df.describe() commands to check for outliers in the Age column, and found an age listed as zero. Although it's possible for a baby to have schizophrenia, I confirmed within the GMrepo website that ages listed as 0 also had an "na" beside it. So, I filtered out the 0 age, took the median of the remaining values, and replaced the zero with the median. 
+Next, I used the df.unique() and df.describe() commands to check for outliers in the Age column, and found an age listed as zero. Although it's possible for a baby to have schizophrenia, I confirmed via the GMrepo website that ages listed as 0 also had an "na" beside it. So, I filtered out the 0 age, took the median of the remaining values, and replaced the zero with the median. 
 
 ![Age](/assets/images/age_unique.jpg) 
 
@@ -77,7 +77,7 @@ From this information, I created two data frames, one with the Mesh IDs, and the
 
 ![Zero](/assets/images/zero_counts.jpg) 
 
-I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, zero occurred more times than the threshold allowed. 
+I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, 80% of the samples did not contain that particular bacteria genus. 
 
 ![Threshold](/assets/images/threshold.jpg) 
 
