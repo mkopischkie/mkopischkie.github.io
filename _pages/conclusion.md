@@ -1,6 +1,6 @@
 ---
-title: "Results"
-permalink: /results/
+title: "Conclusion"
+permalink: /conclusion/
 layout: single
 classes: wide
 ---
