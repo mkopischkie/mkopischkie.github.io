@@ -51,7 +51,7 @@ I merge the health and genus data frames together based on matching unique Run I
 
 ![Eighth](/assets/images/eighthcode.jpg) 
 
-I repeat this same process for males and females with the phenotypes I specified above. The code I used to gather this data can be found in the API Data Gathering Jupyter notebook posted on my GitHub, linked to the left under my profile. 
+I repeat this same process for males and females with the phenotypes I specified above. The code I used to gather this data can be found in the API Data Gathering Jupyter notebook posted on my GitHub, linked to the left under my profile. All the data frames created during data gathering and data cleaning can be found on my GitHub, linked to the left, within the Datasets folder. 
 
 ## Cleaning
 
