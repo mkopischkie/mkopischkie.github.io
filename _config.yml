@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Melina Kopischkie"
   avatar : "/assets/images/headshot.jpg"
-  bio    : "Graduate student in Data Science interested in Artificial Intelligence and Machine Learning"
+  bio    : "Graduate student in Data Science interested in Artificial Intelligence, Machine Learning, and Large Language Models"
   links:
  #   - label: "Website"
  #     icon: "fas fa-fw fa-link"
