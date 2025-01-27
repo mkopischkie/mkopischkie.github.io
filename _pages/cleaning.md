@@ -95,32 +95,60 @@ With this new filtered data frame, I converted the Mesh IDs to a column titled C
 
 ![Parkinsons](/assets/images/generic_parkinsons_graphs.jpg) 
 
+These three graphs illustrate the relative abundance of the most prevalent microbiota in females with Parkinson's, males with Parkinson's, and the ages of males and females within the sample. The first two graphs confirm that there are differences in the gut microbiota composition between males and females with Parkinson's. This information will be useful for the machine learning models to classify or predict Parkinson's based on the gender parameters given. 
+
 ![Alzheimers](/assets/images/generic_alzheimers_graphs.jpg) 
+
+These three graphs illustrate the relative abundance of the most prevalent microbiota in females with Alzheimer's, males with Alzheimer's, and the ages of males and females within the sample. The first two graphs confirm that there are differences in the gut microbiota composition between males and females with Alzheimer's. This information will be useful for the machine learning models to classify or predict Alzheimer's based on the gender parameters given. The histogram containing information on the age of the men and women sampled provides interesting information, but with a larger sample size, we could expect these histograms to be normal. 
 
 ![Schizophrenia](/assets/images/generic_schizophrenia_graphs.jpg) 
 
+These three graphs illustrate the relative abundance of the most prevalent microbiota in females with Schizophrenia, males with Schizophrenia, and the ages and BMIs of males and females within the sample. The first two graphs confirm that there are differences in the gut microbiota composition between males and females with Schizophrenia. There is a significant increase in the amount of prevalent bacteria within the Schizophrenia samples compared to the Alzheimer's and Parkinson's samples. This information will be useful for the machine learning models to classify or predict Schizophrenia and differentiate it between other neurological disorders, including the ones graphed above. Both the age and BMI graphs are what I would expect them to look like. 
+
 ![Bipolar](/assets/images/generic_bipolar_graphs.jpg) 
+
+These three graphs illustrate the relative abundance of the most prevalent microbiota in females with Bipolar Disorder, males with Bipolar Disorder, and the ages and BMIs of males and females within the sample. The first two graphs confirm that there are differences in the gut microbiota composition between males and females with Bipolar Disorder. There is a significant increase in the amount of prevalent bacteria within the Bipolar samples compared to the Alzheimer's and Parkinson's samples, but a similar amount to Schizophrenia. This information will be useful for the machine learning models to classify or predict Bipolar Disorder and differentiate it between other neurological disorders, including Parkinson's and Alzheimer's, but may pose problems when differentiating between Bipolar Disorder and Schizophrenia. Both the age and BMI graphs are what I would expect them to look like. 
 
 ![Epilepsy](/assets/images/generic_epilepsy_graphs.jpg) 
 
+Like Bipolar Disorder and Schizophrenia, there are obvious differences between male and female gut microbiota composition with Epilepsy. Interestingly, it appears that more young males suffer from epilepsy than young females. Furthermore, the average BMI of males with Epilepsy is higher than that of females. 
+
 ![Healthy](/assets/images/generic_healthy_graphs.jpg) 
 
+The healthy group of individuals serves as a control group to compare the gut microbiota against that of those suffering from neurological disorders. Similar to the Bipolar group, we see that the average BMI for males is slightly higher than that of females. We need data on a healthy control group so that the machine learning models can learn what a healthy gut microbiome looks like so that it can identify an unhealthy microbiome.
+
 ![Depression](/assets/images/generic_depression_graphs.jpg) 
+
+Again, there is a large amount of prevalent microbiota with the sample of those suffering from depression. There are still differences between the male and female microbiomes, specifically in the Akkermansia genus, which is one of the most prevalent genus for females, but almost nonexistent for males. However, this could be because there are more females sampled than males, as we can see in the age histogram. 
 
 ### Condition - Related Plots 
 
 ![Schizophrenia Associated Conditions](/assets/images/schizophrenia_associated_conditions_count.jpg) 
 
+My main purpose for creating these graphs was not only to see how these neurological conditions interact with one another, but to see if any gut-related issues were prevalent. For both males and females with Schizophrenia, irritable bowel syndrome was frequently reported, which serves to demonstrate the relationship between gut health and neurological conditions. 
+
 ![Bipolar Associated Conditions](/assets/images/bipolar_associated_conditions_count.jpg) 
+
+These graphs present a pattern between Bipolar Disorder, Depression, and Schizophrenia. It will be important to analyze how similar/different the gut microbiota compositions are between these three conditions. Again, we see that irritable bowel syndrome was again reported as another major condition, alongside constipation. 
 
 ![Epilepsy Associated Conditions](/assets/images/epilepsy_associated_conditions_count.jpg) 
 
+For individuals with Epilepsy, constipation was a major complaint. This indicates that Epilepsy could have the strongest correlation with the gut microbiome. It will be important to analyze how the microbiota in individuals with Epilepsy compares to other neurological disorders, and if that means that Epilepsy truly has a stronger correlation with gut health. 
+
 ![Depression Associated Conditions](/assets/images/depression_associated_conditions_count.jpg) 
+
+Again, we see the relationship between Depression, Bipolar Disorder, and Schizophrenia. But just behind those relationships, we see reports of irritable bowel syndrome and constipation. For females with these three conditions, many also reported Thyroid Diseases. This is another issues that needs to be addressed with respect to gut health. 
 
 ### Word Clouds
 
 ![Word Cloud](/assets/images/wordcloud.jpg)
 
+The concise layout of the word clouds allow for clear visualization to interpret the relationship between neurological conditions and common bacteria genus. Bacteroids and Faecalibacterium are the most common genus across the board. And it's clear that some bacteria common for some neurological disorders are not common, or not existent, for others. 
+
 ### Overlayed Plots
 
 ![Overlay](/assets/images/overlay.jpg)
+
+These plots provide the clearest overview on how microbiota in individuals with neurological disorders differs from the healthy control group microbiota. Every condition has clear differences, which indicates that a machine learning model to classify or predict neurological conditions may be successful. Furthermore, a recommendation system could be built on the data from the models to recommend additional supplements or food to incorporate into a diet. 
+
+
