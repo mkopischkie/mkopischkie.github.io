@@ -1,6 +1,6 @@
 ---
 permalink: /cleaning/
-title: "Data Cleaning/Exploration"
+title: "Data Gathering/Cleaning/Exploration"
 layout: single
 classes: wide
 ---
