@@ -15,5 +15,6 @@ For more information on the mathematical concepts behind PCA, please see my pape
 
 ### References
 [1] GeeksforGeeks. Mathematical approach to pca. https://www.geeksforgeeks.org/mathematical- approach-to-pca/, n.d. Accessed: 2024-12-06.
+
 [2] Statology. How to read a covariance matrix. https://www.statology.org/how-to-read-covariance- matrix/, n.d. Accessed: 2024-12-06.
 
