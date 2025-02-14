@@ -7,35 +7,17 @@ classes: wide
 
 ## Data Gathering 
 
-The Data Repository for Human Gut Microbiota, [GMrepo](https://gmrepo.humangut.info/home), provides publically available APIs to access their data. I used this website and its corresponding API to gather data on fecal samples associated with a particular condition or neurological disorder. Each fecal sample contains bacteria from the individual's gut microbiome. Visiting the website, I was initially brought to the page below. I could select a phenotype for the corresponding gut microbiota, and/or filter out the information pertaining to each sample, including age, sex, country, etc. 
+The Data Repository for Human Gut Microbiota, [GMrepo](https://gmrepo.humangut.info/home), provides publically available APIs to access their data. I used this website and its corresponding API to gather data on fecal samples associated with a particular condition or neurological disorder. Each fecal sample contains bacteria from the individual's gut microbiome. Visiting the website, I was initially brought a page where I could select a phenotype for the corresponding gut microbiota and filter the information pertaining to each sample, including age, sex, country, etc. 
 
-![GMrepo Home](/assets/images/gmrepo_home.jpg) 
+I will walk through, in detail, how I collected gut microbiota data for individuals with Schizophrenia. The same collection technique was used for Alzheimer's, Parkinson's, Bipolar Disorder, Epilepsy, Depression, and a healthy control group. I filtered each condition by gender to collect the gut microbiota data. The same collection technique was used for male and female samples. For this in-depth walk-through, I will focus my data collection on males with Schizophrenia. After filtering the website, a dataframe came up with each row representing an individual with information on their age, Body Mass Index (BMI), and residing country. A hyperlink embedded in each row gave me the species, genus, and relative abundance data of the individual's microbiome. 
 
-I will walk through, in detail, how I collected gut microbiota data for individuals with Schizophrenia. The same collection technique was used for Alzheimer's, Parkinson's, Bipolar Disorder, Epilepsy, Depression, and a healthy control group. I filtered each condition by gender to collect the gut microbiota data. The same collection technique was used for male and female samples. For this in-depth walk-through, I will focus my data collection on males with Schizophrenia. After filtering for the Schizophrenia phenotype and the male gender, I was faced with the following output. 
+Rather than slowly collecting the relative genus abundance data for each Run ID, I quickly got the necessary information by using the API. After initially filtering, I could download a dataframe as a .tsv file to extract the Run IDs for gut microbiota data for each individual.
 
-![Search Result](/assets/images/search_result.jpg) 
+With the Run ID's, I could embed the API in a for loop so that it would pull all the genus information on the Run IDs. At this point, printing the genus outputs a data frame corresponding to the first Run ID. It contains information related to the scientific name of the bacteria found in the sample and the relative abundance. Eventually, I want this data frame to have the column titles as the scientific names and the first column containing the Run IDs so that a row represents a sample with a unique Run ID and the relative abundances for the corresponding bacteria. 
 
-Each row represents an individual with information on their age, Body Mass Index (BMI), and residing country. The species, genus, and relative abundance data are available within the Run ID hyperlink. In the hyperlink, I'm directed to the page below. 
+Now that I have the bacteria names and relative abundances associated with each Run ID, I want to retain the corresponding information relating to the gender, age, BMI, country, and other diseases/conditions associated with the sample. As this information is kept in the same .tsv file that I downloaded, I can extract it in the same for loop. Then, I can append each Run ID to an empty array that I initialized before my for loop.
 
-![Sample](/assets/images/runid_sample.jpg) 
-
-Rather than slowly collecting the relative genus abundance data for each Run ID, I quickly got the necessary information by using the API. If you noticed in the second image, I could download the data as a .tsv to extract the Run IDs for gut microbiota data for each individual, as done in the code below
-
-![First](/assets/images/firstcode.jpg) 
-
-From that file, I could embed the API in a for loop so that it would pull all the genus information on the Run IDs. 
-
-![Second](/assets/images/secondcode.jpg) 
-
-The if statement within the for loop is telling my computer that if a Run ID does not have any genus information available, to skip that particular sample. At this point, printing the genus outputs a data frame corresponding to the first Run ID. It contains information related to the scientific name of the bacteria found in the sample and the relative abundance. Since the Taxon ID, Rank Level, and Loaded UID are redundant, I drop them from the genus data frame. Eventually, I want this data frame to have the column titles as the scientific names and the first column containing the Run IDs so that a row represents a sample with a unique Run ID and the relative abundances for the corresponding bacteria. With this in mind, I change the column names and drop any duplicate scientific names. So now my code looks like this: 
-
-![Third](/assets/images/thirdcode.jpg) 
-
-Now that I have the bacteria names and relative abundances associated with each Run ID, I want to retain the corresponding information relating to the gender, age, BMI, country, and other diseases/conditions associated with the sample. As this information is kept in the same .tsv file that I downloaded, I can extract it in the same for loop. Then, I can append each Run ID to an empty array that I initialized before my for loop so that now my code looks like this: 
-
-![Fourth](/assets/images/fourthcode.jpg) 
-
-From now on, I will associate the health data frame/array with the gender, age, BMI, etc. information. Because the genus and health attributes are stored in an array and I want them in a data frame, I initialize a for loop and concatenate each sample below one another so that the health data frame will look like this: 
+Because the genus and health attributes are stored in an array and I want them in a data frame, I initialize a for loop and concatenate each sample below one another so that the health data frame will look like this: 
 
 ![Fifth](/assets/images/fifthcode.jpg) 
 
@@ -57,31 +39,17 @@ I repeat this same process for males and females with the phenotypes I specified
 
 I will walk through the cleaning process using the male schizophrenia data frame I completed while walking through the data collection. After reading in the data frame I created from the data gathering step, I used the df.isnull().sum() command to check for NaN's in each column. No column had NaN values in this example, so I used the df.unique() command to check for outliers for the BMI, Age, and Country. With other data frames that were larger, I used the df.describe() command to check for outliers at the minimum and maximum values. The BMI column had a couple outliers, so I filtered out the outliers, calculated the median BMI for the remaining samples, and replaced the outliers with the median. I excluded the BMI values less than 15 and over 50 from my filter because the age range was between early teenagers and elders. Initially, I tried to make a better guess for the replacement, but with only Age and Country as additional parameters, I didn't want to make any unnecessary assumptions, skewing the data further. 
 
-![BMI](/assets/images/bmi_unique.jpg) 
-
 Next, I used the df.unique() and df.describe() commands to check for outliers in the Age column, and found an age listed as zero. Although it's possible for a baby to have schizophrenia, I confirmed via the GMrepo website that ages listed as 0 also had an "na" beside it. So, I filtered out the 0 age, took the median of the remaining values, and replaced the zero with the median. 
-
-![Age](/assets/images/age_unique.jpg) 
 
 Then, I used the df.unique() command on the Country column to check if there were zeros there too and only found the expected answers, so no cleaning had to be done to this column. 
 
 The Mesh ID column represents the medical ID for other disorders/conditions that the individual may have. I made a dictionary to serve as a key between the ID and the medical terminology to make reading the data frame simpler. 
 
-![Dictionary](/assets/images/dict.jpg) 
-
 The ID for schizophrenia is D012559, but there were additional conditions/disorders that patients reported as well. By turning the Mesh ID column into a flattened series and finding the unique values, I could use the dictionary to see the list of conditions/disorders that patients with schizophrenia reported. 
-
-![Mesh ID](/assets/images/meshid.jpg) 
 
 From this information, I created two data frames, one with the Mesh IDs, and the other with the Condition listed out. But first, I wanted to narrow down the bacteria so that the final data frame would hold the most prevalent bacteria. I experimented with the df.value_counts() function and realized that most bacteria only occurred in a hand-full of samples. I filtered these out by summing the number of times that zero occurred for each genus of bacteria. 
 
-![Zero](/assets/images/zero_counts.jpg) 
-
-I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, 80% of the samples did not contain that particular bacteria genus. 
-
-![Threshold](/assets/images/threshold.jpg) 
-
-I saved the new data frame with the most prevalent bacteria genus' as a .csv file for later use.
+I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, 80% of the samples did not contain that particular bacteria genus. I saved the new data frame with the most prevalent bacteria genus' as a .csv file for later use.
 
 ![Filtered](/assets/images/filtered.jpg) 
 
