@@ -19,19 +19,19 @@ Now that I have the bacteria names and relative abundances associated with each 
 
 Because the genus and health attributes are stored in an array and I want them in a data frame, I initialize a for loop and concatenate each sample below one another so that the health data frame will look like this: 
 
-![Fifth](/assets/images/fifthcode.jpg) 
+![Fifth](/assets/images/df1.jpg) 
 
 Now, I want to do the same thing with the genus data frame, but since it is formatted differently, I need to merge the samples together so that the genus data frame will look like this: 
 
-![Sixth](/assets/images/sixthcode.jpg) 
+![Sixth](/assets/images/df2.jpg) 
 
 As I stated earlier, I want the Run IDs listed as the first column, so I need to transpose this data frame. After resetting the index and renaming the Scientific Name column to the Run ID column, so it makes sense after transposing, I can start to merge the two data frames together 
 
-![Seventh](/assets/images/seventhcode.jpg) 
+![Seventh](/assets/images/df3.jpg) 
 
 I merge the health and genus data frames together based on matching unique Run IDs from the Run ID column. Then I concatenate so that each row has a unique Run ID and I'm left with a data frame of all the Run IDs and corresponding information for males with schizophrenia. 
 
-![Eighth](/assets/images/eighthcode.jpg) 
+![Eighth](/assets/images/df4.jpg) 
 
 I repeat this same process for males and females with the phenotypes I specified above. The code I used to gather this data can be found in the API Data Gathering Jupyter notebook posted on my GitHub, linked to the left under my profile. All the data frames created during data gathering and data cleaning can be found on my GitHub, linked to the left, within the Datasets folder. 
 
