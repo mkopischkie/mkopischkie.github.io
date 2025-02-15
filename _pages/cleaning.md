@@ -53,7 +53,7 @@ I defined a threshold equating to 20% of the data frame. This threshold removed 
 
 With the new filtered data frame, I converted the Mesh IDs to a column titled Condition, where the IDs were replaced with the medical condition/disorder. This required reformatting the Mesh IDs, using the dictionary as a key, and applying the replacement to the Mesh ID column. A snippet of the clean data frame with conditions listed, rather than Mesh IDs, is attached below. 
 
-![Clean](/assets/images/clean.jpg) 
+![Clean](/assets/images/df5.jpg) 
 
 ## Visualizations 
 
