@@ -51,9 +51,7 @@ From this information, I created two data frames, one with the Mesh IDs, and the
 
 I defined a threshold equating to 20% of the data frame. This threshold removed the bacteria that exceeded it. In other words, if a bacteria exceeded the threshold, 80% of the samples did not contain that particular bacteria genus. I saved the new data frame with the most prevalent bacteria genus' as a .csv file for later use.
 
-![Filtered](/assets/images/filtered.jpg) 
-
-With this new filtered data frame, I converted the Mesh IDs to a column titled Condition, where the IDs were replaced with the medical condition/disorder. This required reformatting the Mesh IDs, using the dictionary as a key, and applying the replacement to the Mesh ID column. A snippet of the clean data frame with conditions listed, rather than Mesh IDs, is attached below. 
+With the new filtered data frame, I converted the Mesh IDs to a column titled Condition, where the IDs were replaced with the medical condition/disorder. This required reformatting the Mesh IDs, using the dictionary as a key, and applying the replacement to the Mesh ID column. A snippet of the clean data frame with conditions listed, rather than Mesh IDs, is attached below. 
 
 ![Clean](/assets/images/clean.jpg) 
 
