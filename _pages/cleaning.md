@@ -117,4 +117,10 @@ The concise layout of the word clouds allow for clear visualization to interpret
 
 These plots provide the clearest overview on how microbiota in individuals with neurological disorders differs from the healthy control group microbiota. Every condition has clear differences, which indicates that a machine learning model to classify or predict neurological conditions may be successful. Furthermore, a recommendation system could be built on the data from the models to recommend additional supplements or food to incorporate into a diet. 
 
+## Additional Data
+
+While clustering, an unsupervised machine learning technique, I discovered some problems in my original data from the GMRepo API. One being that all those who reported depression, also reported schizophrenia and bipolar disorder. But, not everyone who has depression also has schizophrenia and bipolar disorder. To correct this, I downloaded data on the microbiome of humans with depression, bipolar disorder, and schizophrenia separately from the [NCBI](https://www.ncbi.nlm.nih.gov/biosample/43520747). The corresponding code is in the "More Bipolar Data", "More Depression Data", and "More Schizophrenia Data". 
+
+With the additional data collected and combined in the combined_data_with_extra_data.csv, I replotted the overlayed plots for a better idea as to the microbiota prevalence for separate neurological disorders. 
+
 
