@@ -21,7 +21,7 @@ Next, I specify that I want to see the first three principal components and prin
 
 ![Explained](/assets/images/park_explained_var.jpg) 
 ![Cum](/assets/images/park_cum_var.jpg) 
-![Eigen](/assets/images/park_eigen.jpg) 
+![Eigen](/assets/images/park_eigen_better.jpg) 
 
 
 The following graph represents the first three principal components: 
