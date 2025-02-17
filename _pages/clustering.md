@@ -5,4 +5,16 @@ layout: single
 classes: wide
 ---
 
-No content here :)
+## Methods 
+
+
+
+## K-Means 
+
+
+
+## DBSCAN
+
+
+
+## Hierarchial 
