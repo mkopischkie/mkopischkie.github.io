@@ -123,4 +123,4 @@ While clustering, an unsupervised machine learning technique, I discovered some 
 
 With the additional data collected and combined in the combined_data_with_extra_data.csv, I replotted the overlayed plots for a better idea as to the microbiota prevalence for separate neurological disorders. 
 
-
+![Overlay2](/assets/images/overlay2.jpg)
