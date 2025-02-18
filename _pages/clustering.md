@@ -13,7 +13,12 @@ classes: wide
 
 There are two types of **Hierarchial Clustering**:
 1. *Agglomerative* clustering uses a bottom-up approach where initially, each datapoint is treated as its own cluster. This method groups clusters together based on a distance metric. The algorithm identifies the clusters that are the closest together based on a specified distance metric, and merges the two clusters together. Then, the distance between the newly formed clusters and remaining clusters is recalculated based on the chosen linkage. This process continues until all the clusters are merged together, or a predefined number of clusters is met, and is easily represented by a dendrogram. 
-2. *Divisive* clustering is a top-down approach where the data starts groupped together in one cluster. The algorithm recursively splits the cluster until a predefined number of clusters is met. The algorithm finds the best way to split a cluster into two subclusters, often using distance-based measures or techniques like k-means. This continues until the predefined stopped criteria is met. 
+2. *Divisive* clustering is a top-down approach where the data starts groupped together in one cluster. The algorithm recursively splits the cluster until a predefined number of clusters is met. The algorithm finds the best way to split a cluster into two subclusters, often using distance-based measures or techniques like k-means. This continues until the predefined stopped criteria is met.
+
+
+# Compare and Contrast Methods: 
+
+
 
 ## K-Means 
 
