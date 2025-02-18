@@ -53,7 +53,7 @@ Normalized Mutual Information (Hier.):  0.22714965343103494 | Normalized Mutual 
 Silhouette Score (K-means): 0.4493408014172253 | Silhouette Score (K-means): 0.42554559679547044
 Adjusted Rand Index (K-means):  0.0710663060272605 | Adjusted Rand Index (K-means):  0.0020391650493911937
 Normalized Mutual Information (K-means):  0.18472406309317152 | Normalized Mutual Information (K-means):  0.08978957460503154 
-**k=4: Hierarchial** | **k=4: Hierarchial**
+**k=4: Hierarchial** | **k=6: Hierarchial**
 
 
 
