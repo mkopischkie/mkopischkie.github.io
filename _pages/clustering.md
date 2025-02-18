@@ -38,7 +38,7 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 ---------------------- | ------------------------
  **k=2: K-Means**      | **k=3: K-Means**
 ![Orig](/assets/images/k=2_ss.jpg) | ![Orig](/assets/images/k=3_noss.jpg) 
-![Orig](/assets/images/k=2_cent_ss.jpg) | ![Orig](/assets/images/k=3_cent_ss.jpg) 
+![Orig](/assets/images/k=2_cent_ss.jpg) | ![Orig](/assets/images/k=3_cent_noss.jpg) 
 ---------------------- | ------------------------
 **k=2: Hierarchial**   | **k=3: Hierarchial**
 
