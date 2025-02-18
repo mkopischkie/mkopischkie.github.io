@@ -34,7 +34,7 @@ I am performing K-Means, Agglomerative Hierarchial Clustering, and DBSCAN on two
 
 Standardized Dataset | Original dataset
 -------------------- | ----------------
-
+![Orig](/assets/images/stand_feat.jpg) | ![Orig](/assets/images/orig_feat.jpg) 
 
 ## Silhouette Method
 
