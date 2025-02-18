@@ -30,6 +30,12 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 
 ![Final](/assets/images/final_df_clus.jpg) 
 
+I am performing K-Means, Agglomerative Hierarchial Clustering, and DBSCAN on two different datasets. Where one was standardized, using StandardScalar() and the other was not. In the dataframe above, the values are all relative abundances of bacteria found in various microbiomes. Because these values are already scaled across the rows, standardizing may skew the data. On both datasets, PCA was performed to reduce the features to three for easy visualization. The amount of variance retained in the standardized datast is 16%, whereas the variance retained in the other dataset is 59%. The three features contributing the most to the first three components in each dataset are:
+
+Standardized Dataset | Original dataset
+-------------------- | ----------------
+
+
 ## Silhouette Method
 
  With StandardScalar() | Without StandardScalar() 
