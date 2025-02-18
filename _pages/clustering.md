@@ -81,6 +81,8 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
 
 ## Additional Visualizations
 
+![Orig](/assets/images/park_alz_health_clust.jpg) | Percent variance remaining after PCA: 99.9%
+                                                    Most important features in first three PC's: Age, BMI, Sex_Male
 
 
 
