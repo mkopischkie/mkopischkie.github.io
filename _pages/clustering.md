@@ -83,7 +83,7 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
 
 <table>
   <tr>
-    <td><img src="/assets/images/park_alz_health_clust.jpg" alt="Orig" width="300"></td>
+    <td><img src="/assets/images/park_alz_health_clust.jpg" alt="Orig" width="600"></td>
     <td>
       <strong>Percent variance remaining after PCA:</strong> 99.9% <br>
       <strong>Most important features in first three PC's:</strong> Age, BMI, Sex_Male <br>
