@@ -48,7 +48,12 @@ Silhouette Score (Hier.):  0.6742684861844029 | Silhouette Score (Hier.):  0.465
 Adjusted Rand Index (Hier.):  0.1311652836574616 | Adjusted Rand Index (Hier.):  0.014985469675248376
 Normalized Mutual Information (Hier.):  0.22714965343103494 | Normalized Mutual Information (Hier.):  0.057293719384593496
 **k=4: K-Means** | **k=6 K-Means**
-
+![Orig](/assets/images/k=4_ss.jpg) | ![Orig](/assets/images/k=6_noss.jpg) 
+![Orig](/assets/images/k=4_cent_ss.jpg) | ![Orig](/assets/images/k=6_cent_noss.jpg) 
+Silhouette Score (K-means): 0.4493408014172253 | Silhouette Score (K-means): 0.42554559679547044
+Adjusted Rand Index (K-means):  0.0710663060272605 | Adjusted Rand Index (K-means):  0.0020391650493911937
+Normalized Mutual Information (K-means):  0.18472406309317152 | Normalized Mutual Information (K-means):  0.08978957460503154 
+**k=4: Hierarchial** | **k=4: Hierarchial**
 
 
 
