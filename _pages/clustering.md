@@ -35,6 +35,7 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
  With StandardScalar() | Without StandardScalar() 
  --------------------- | -----------------------
 ![Orig](/assets/images/sil_standardscalar.jpg) | ![Orig](/assets/images/sil_without_standardscalar.jpg) 
+![Orig](/assets/images/k=2_dend_ss.jpg) | ![Orig](/assets/images/k=3_dend_noss.jpg) 
  **k=2: K-Means**      | **k=3: K-Means**
 ![Orig](/assets/images/k=2_ss.jpg) | ![Orig](/assets/images/k=3_noss.jpg) 
 ![Orig](/assets/images/k=2_cent_ss.jpg) | ![Orig](/assets/images/k=3_cent_noss.jpg) 
@@ -43,7 +44,6 @@ Adjusted Rand Index (K-means):  -0.012740774016489093         | Adjusted Rand In
 Normalized Mutual Information (K-means):  0.0784546418604076  | Normalized Mutual Information (K-means):  0.07139054378464378   
 **k=2: Hierarchial**   | **k=3: Hierarchial**
 ![Orig](/assets/images/k=2_hier_ss.jpg) | ![Orig](/assets/images/k=3_hier_noss.jpg) 
-![Orig](/assets/images/k=2_dend_ss.jpg) | ![Orig](/assets/images/k=3_dend_noss.jpg) 
 Silhouette Score (Hier.):  0.6742684861844029 | Silhouette Score (Hier.):  0.46529239268857936
 Adjusted Rand Index (Hier.):  0.1311652836574616 | Adjusted Rand Index (Hier.):  0.014985469675248376
 Normalized Mutual Information (Hier.):  0.22714965343103494 | Normalized Mutual Information (Hier.):  0.057293719384593496
