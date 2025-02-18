@@ -33,6 +33,7 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 ## Silhouette Method
 
  With StandardScalar() | Without StandardScalar() 
+ --------------------- | -----------------------
 ![Orig](/assets/images/sil_standardscalar.jpg) | ![Orig](/assets/images/sil_without_standardscalar.jpg) 
  **k=2: K-Means**      | **k=3: K-Means**
 ![Orig](/assets/images/k=2_ss.jpg) | ![Orig](/assets/images/k=3_noss.jpg) 
