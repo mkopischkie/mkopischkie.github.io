@@ -30,17 +30,14 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 
 ![Final](/assets/images/final_df_clus.jpg) 
 
-## K-Means 
+## Silhouette Method
 
  With StandardScalar() | Without StandardScalar() 
  --------------------- | ------------------------ 
 ![Orig](/assets/images/sil_standardscalar.jpg) | ![Orig](/assets/images/sil_without_standardscalar.jpg) 
+---------------------- | ------------------------
+k=2: K-Means           | k=3: K-Means 
 
 
 
 
-## DBSCAN
-
-
-
-## Hierarchial 
