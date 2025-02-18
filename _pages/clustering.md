@@ -32,6 +32,11 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 
 ## K-Means 
 
+ With StandardScalar() | Without StandardScalar() 
+ --------------------- | ------------------------ 
+
+
+
 
 
 ## DBSCAN
