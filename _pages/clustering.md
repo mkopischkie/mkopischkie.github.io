@@ -86,9 +86,9 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
     <td><img src="/assets/images/park_alz_health_clust.jpg" alt="Orig" width="300"></td>
     <td>
       <strong>Percent variance remaining after PCA:</strong> 99.9% <br>
-      <strong>Most important features in first three PC's:</strong> Age, BMI, Sex_Male
-      <strong>Silhouette Score:</strong> 0.6686235956003335
-      <strong>Adjusted Rand Index:</strong> 0.4723387314457915
+      <strong>Most important features in first three PC's:</strong> Age, BMI, Sex_Male <br>
+      <strong>Silhouette Score:</strong> 0.6686235956003335 <br>
+      <strong>Adjusted Rand Index:</strong> 0.4723387314457915 <br>
       <strong>Normalized Mutual Information:</strong> 0.6504110441996591
     </td>
   </tr>
