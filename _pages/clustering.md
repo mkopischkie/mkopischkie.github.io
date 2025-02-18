@@ -94,6 +94,19 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td><img src="/assets/images/sch_bi_dep_clust.jpg" alt="Orig" width="600"></td>
+    <td>
+      <strong>Percent variance remaining after PCA:</strong> 50% <br>
+      <strong>Most important features in first three PC's:</strong> Bacteroids and Prevotella (2) <br>
+      <strong>Silhouette Score:</strong> 0.5807762886916383 <br>
+      <strong>Adjusted Rand Index:</strong> 0.13611382100414407 <br>
+      <strong>Normalized Mutual Information:</strong> 0.2631590762011263
+    </td>
+  </tr>
+</table>
+
 
 
 
