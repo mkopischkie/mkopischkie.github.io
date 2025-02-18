@@ -69,6 +69,8 @@ Normalized Mutual Information (K-means):  0.2004261662714766 | Normalized Mutual
 Silhouette Score (Hier.):  0.29418343454100243 | Silhouette Score (Hier.):  0.30986398611475724 
 Adjusted Rand Index (Hier.):  0.06192354838498244 | Adjusted Rand Index (Hier.):  0.0017529802511610218 
 Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual Information (Hier.):  0.09271256576395098
+**DBSCAN**
+![Orig](/assets/images/dbscan_ss.jpg) | ![Orig](/assets/images/dbscan_noss.jpg) 
 
 
 
