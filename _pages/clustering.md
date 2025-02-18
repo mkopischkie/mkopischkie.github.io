@@ -33,14 +33,15 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 ## Silhouette Method
 
  With StandardScalar() | Without StandardScalar() 
- --------------------- | ------------------------ 
 ![Orig](/assets/images/sil_standardscalar.jpg) | ![Orig](/assets/images/sil_without_standardscalar.jpg) 
----------------------- | ------------------------
  **k=2: K-Means**      | **k=3: K-Means**
 ![Orig](/assets/images/k=2_ss.jpg) | ![Orig](/assets/images/k=3_noss.jpg) 
 ![Orig](/assets/images/k=2_cent_ss.jpg) | ![Orig](/assets/images/k=3_cent_noss.jpg) 
----------------------- | ------------------------
+Silhouette Score (K-means): 0.3314845735616456                |   Silhouette Score (K-means): 0.3627119322222995
+Adjusted Rand Index (K-means):  -0.012740774016489093         | Adjusted Rand Index (K-means):  0.03621184786387432
+Normalized Mutual Information (K-means):  0.0784546418604076  | Normalized Mutual Information (K-means):  0.07139054378464378   
 **k=2: Hierarchial**   | **k=3: Hierarchial**
+
 
 
 
