@@ -16,7 +16,7 @@ There are two types of **Hierarchial Clustering**:
 2. *Divisive* clustering is a top-down approach where the data starts groupped together in one cluster. The algorithm recursively splits the cluster until a predefined number of clusters is met. The algorithm finds the best way to split a cluster into two subclusters, often using distance-based measures or techniques like k-means. This continues until the predefined stopped criteria is met.
 
 
-# Compare and Contrast Methods: 
+### Compare and Contrast Methods: 
 
 
 
