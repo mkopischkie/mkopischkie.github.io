@@ -34,7 +34,7 @@ Clustering only works on unlabaled, quantitative data, because it calculates dis
 
  With StandardScalar() | Without StandardScalar() 
  --------------------- | ------------------------ 
-
+![Orig](/assets/images/sil_standardscalar.jpg) | ![Orig](/assets/images/sil_without_standardscalar.jpg) 
 
 
 
