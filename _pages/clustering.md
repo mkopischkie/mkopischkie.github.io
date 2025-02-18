@@ -24,11 +24,11 @@ There are two types of **Hierarchial Clustering**:
 
 For clustering, I used the dataset named combined_data_with_extra_data.csv. This dataset contains all the cleaned data frome the GMRepo and the NCBI. Reading in the file, the original dataframe looked like this:
 
-*insert image
+![Orig](/assets/images/orig_df_clust.jpg) 
 
 Clustering only works on unlabaled, quantitative data, because it calculates distance measures, so I dropped the 'Country' and 'Sex' columns immediately. Although I would like to have kept the 'Age' and 'BMI' columns, the NCBI database was not consistent in reporting those measures, so I dropped those columns as well. Then, I printed out the unique neurological disorder values, and since an individual could have multiple, they are: 'Health', 'Parkinsons', 'Alzheimers', 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', 'Epilepsy', 'Depression', and 'Schizophrenia'. I created a dictionary to replace these disorders with integers instead. I saved the 'Condition' column as the label and dropped it from my dataframe. Now, my dataframe is ready for clustering and looks like this: 
 
-
+![Final](/assets/images/final_df_clus.jpg) 
 
 ## K-Means 
 
