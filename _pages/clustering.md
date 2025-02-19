@@ -149,6 +149,15 @@ Clustering between Parkinsons, Alzheimers, and a healthy control yielded very po
 
 Although clustering with Schizophrenia, Bipolar Disorder, and Depression didn't yield has high of scores as the neurdegenerative disorders, there were still a couple of interesting insights. There was less variance was captured in the 3D visualization than for the neurodegenerative disorders, the three most important features were Bacteroids and Prevotella, which appears twice. Going back to my visualizations with additional data, I see that Bacteroids are essentially missing from the psychiatric disorder microbiome, with a high increase in Prevotella in Bipolar Disorder as compared to the healthy control group. 
 
+Next, I wanted to see how individual neurological disorders would cluster against the healthy control group. First, Parkinsons maintained a high variance captured and silhouette score, but the NMI score was surprisingly low. I was curious if either the Parkinsons group or the Healthy group contributed more to the lower NMI score, so I ran a similar test with Schizophrenia and a Healthy control. I saw the same things with a high silhouette score but a low NMI score. I ran a confusion matrix and found that the algorithm was labeling more healthy individuals as individuals with schizophrenia. From this information, I believe that I need to collect more data, especially on a healthy control. 
+
+Overall, both K-Means and Hierarchial Clustering separated the data well and generally performed better on smaller datasets. My next steps include: collecting more data, refining the algorithms, trying new clustering algorithms, and running confusion matricies if the NMI score is still low. 
+
+
+
+
+
+
 
 
 
