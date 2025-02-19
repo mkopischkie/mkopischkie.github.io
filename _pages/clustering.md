@@ -107,6 +107,19 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td><img src="/assets/images/park_health_clust.jpg" alt="Orig" width="600"></td>
+    <td>
+      <strong>Percent variance remaining after PCA:</strong> 99.9% <br>
+      <strong>Most important features in first three PC's:</strong> Age, Sex_Female, and Bacteroids <br>
+      <strong>Silhouette Score:</strong> 0.7400023522002559 <br>
+      <strong>Adjusted Rand Index:</strong> 0.1682006284167953 <br>
+      <strong>Normalized Mutual Information:</strong> 0.31207464042723443
+    </td>
+  </tr>
+</table>
+
 
 
 
