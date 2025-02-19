@@ -135,7 +135,19 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
 
 ## Conclusions
 
+Standardizing my data with standard scalar produced a silhouette graph that indicates I should use k=2 and k=4. I also used k=9 because I have nine unique neurological disorders, some that are a combination of two. The dendrogram appears to recommend using a k=4. 
 
+Without standardizing my data, the silhouette graph indicates that I should use k=3 and k=9. I also performed clustering with nine clusters for the reason I decsribed above. Although these have lower silhouette scores overall, these k values make more intuitive sense. The individual neurological disorders I am looking at are: Parkinsons, Alzheimers, Schizophrenia, Epilepsy, Bipolar Disorder, and Depression. These disorders represent both neurodegenerative and psychiatric disorders. Since I was also clustering with a healthy control group, there are three broad clusters that represent the neurological disorders. The k=6 is interesting has I have six unique and individual disorders, but one healthy control group as well. 
+
+The k=9 I found most interesting between the standardized and unstandardized datasets. Even though the unstandarized one has a higher silhouette score, the standardized dataset has a higher NMI score, which represents how well the clustered labels fit the true labels. 
+
+The DBSCAN clustering method has a hard time clustering more than two groups together. This makes sense given that all my data appears densely packed together and I'm analyzing small differences in bacteria or concentrations in the gut microbiome. However, DBSCAN still prints an interesting result for the standardized dataset. It appears to have two unique clusters, which could possibly represent the healthy control groups and those with neurological disorders. 
+
+This led me to perform additional clustering on smaller datasets. First, I wanted to see if there was a difference in performance between neurdegenerative disorders with a healthy control, and between psychiatric diseases. 
+
+Clustering between Parkinsons, Alzheimers, and a healthy control yielded very positive results. After completing PCA, 99.9% of the variance in my dataset was captured with the main contribution factors being age, bmi, and sex. I wanted to keep sex in this dataframe for clustering because I want to observe the differences to see if sex has an impact on gut microbiome composition and neurological disorders. I used the command pd.get_dummies() and found that my scores were much higher than if I dropped sex from this dataframe. Aside from a high silhouette score, my NMI score is also quite high, indicating that the predicted labels line up with the true labels well. 
+
+Although clustering with Schizophrenia, Bipolar Disorder, and Depression didn't yield has high of scores as the neurdegenerative disorders, there were still a couple of interesting insights. There was less variance was captured in the 3D visualization than for the neurodegenerative disorders, the three most important features were Bacteroids and Prevotella, which appears twice. Going back to my visualizations with additional data, I see that Bacteroids are essentially missing from the psychiatric disorder microbiome, with a high increase in Prevotella in Bipolar Disorder as compared to the healthy control group. 
 
 
 
