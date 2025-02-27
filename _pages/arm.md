@@ -22,6 +22,9 @@ In the scope of my project, I am conducting the Apriori method two different way
 
 ## Data Prep
 
+Association rule mining and the Apriori algorithm requires data in a transaction format. This can look several different ways. 
+
+
 
 
 
