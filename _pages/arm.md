@@ -30,6 +30,20 @@ My goal is to replace the relative abundances with the column names they occur i
 
 ![Final](/assets/images/trans_data.jpg) 
 
+For more specific association rules, I binned the relative abundances from the combined_df file to have each relative abundance be filled with a low, medium, or high bacterial genus. I used the same process above so that the binned transaction data is named col_names_disc_trans_data.csv and pictured below. 
+
+image
+
+I used the apriori algorithm a couple different ways, one where I separated the transaction data into neurological disorders, one where I used the algorithm on the whole dataset, and another where I used the algorithm on the whole discretized dataset. I will walk through the algorithm that I used to generate association rules on the Parkinsons transaction data specifically. 
+
+In the ARM Parkinsons notebook, I separated the transactions with Parkinsons and isolated the items. With these isolated, I performed one-hot-encoding so that the bacterial names would again be the column names with a binary 0 or 1 indicating the presense or lack thereof in each transaction. 
+
+image
+
+Then, I used the apriori algorithm to generate the frequent itemsets. For the Parkinsons transactions, I used a high min_support threshold because the majority of the bacterial names reoccur in each row. 
+
+
+
 
 
 
