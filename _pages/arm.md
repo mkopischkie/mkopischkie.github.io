@@ -24,7 +24,11 @@ In the scope of my project, I am conducting the Apriori method two different way
 
 Association rule mining and the Apriori algorithm requires data in a transaction format. This can look several different ways. To perform apriori in Python, I will use my combined_data csv file pictured below. 
 
+![Orig](/assets/images/combined_df.jpg) 
+
 My goal is to replace the relative abundances with the column names they occur in. First, I drop any numerical data, such as Age, BMI, and Country, that would not make sense if it was replaced with the column name. Then, I can replace the non-zero relative abundances with the column name. I drop the column names and replace them with numbers corresponding to the column, as transaction data does not have any column names. To make the data look like transaction data, I put the data into a list, put the non-zero entries first, and put the list back into a dataframe. The new transaction data is kept in the col_names_trans_data.csv file and is pictured below. 
+
+![Final](/assets/images/trans_data.jpg) 
 
 
 
