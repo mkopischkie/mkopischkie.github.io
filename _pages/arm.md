@@ -32,25 +32,25 @@ My goal is to replace the relative abundances with the column names they occur i
 
 For more specific association rules, I binned the relative abundances from the combined_df file to have each relative abundance be filled with a low, medium, or high bacterial genus. I used the same process above so that the binned transaction data is named col_names_disc_trans_data.csv and pictured below. 
 
-image
+![Fifth](/assets/images/trans_binned_data.jpg) 
 
 I used the apriori algorithm a couple different ways, one where I separated the transaction data into neurological disorders, one where I used the algorithm on the whole dataset, and another where I used the algorithm on the whole discretized dataset. I will walk through the algorithm that I used to generate association rules on the Parkinsons transaction data specifically. 
 
 In the ARM Parkinsons notebook, I separated the transactions with Parkinsons and isolated the items. With these isolated, I performed one-hot-encoding so that the bacterial names would again be the column names with a binary 0 or 1 indicating the presense or lack thereof in each transaction. 
 
-image
+![Fifth](/assets/images/ohe_df.jpg) 
 
 Then, I used the apriori algorithm to generate the frequent itemsets. For the Parkinsons transactions, I used a high min_support threshold of 0.97 because the majority of the bacterial names reoccur in each row. From there, I could generate the rules. The top 15 rules for confidence, sorted in decreasing order, using a min_threshold of one, are shown below.
 
-image 
+![Fifth](/assets/images/top155_conf.jpg) 
 
 The top 15 rules for support, sorted in decreasing order, using a min_threshold of 0.97, are shown below. 
 
-image
+![Fifth](/assets/images/top15_supp.jpg) 
 
 The top 15 rules for lift, sorted in decreasing order, using a min_threshold of one, are shown below. 
 
-image 
+![Fifth](/assets/images/top15_lift.jpg) 
 
 Using the plotly library, I generated a scatter plot of support vs confidence with the hue as support. This was created using the frequent itemsets with a min_support of 0.85 and from the rules generated from confidence with a min_threshold of 0.85. 
 
@@ -58,7 +58,7 @@ image
 
 I could also create a network graph using a min_support=1 to generate the frequent items and a min_threshold=1 for the confidence rules. 
 
-image 
+![Fifth](/assets/images/networkgraph.jpg) 
 
 
 
