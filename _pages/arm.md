@@ -60,6 +60,7 @@ I could also create a network graph using a min_support=1 to generate the freque
 
 ![Fifth](/assets/images/networkgraph.jpg) 
 
+## Additional Visualizations
 
 
 
