@@ -62,8 +62,11 @@ I could also create a network graph using a min_support=1 to generate the freque
 
 ## Additional Visualizations
 
+[View Epilepsy Graph](/assets/images/ep_plotly.html)
 
+[View Alzheimers Graph](/assets/images/alz_plotly.html)
 
+[View Depression Graph](/assets/images/dep_plotly.html)
 
 
 
