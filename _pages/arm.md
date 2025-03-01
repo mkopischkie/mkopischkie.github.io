@@ -54,7 +54,7 @@ The top 15 rules for lift, sorted in decreasing order, using a min_threshold of 
 
 Using the plotly library, I generated a scatter plot of support vs confidence with the hue as support. This was created using the frequent itemsets with a min_support of 0.85 and from the rules generated from confidence with a min_threshold of 0.85. 
 
-[View Graph](file:///Users/melinakopischkie/Documents/Machine%20Learning/supvsconf.html)
+[View Graph](/assets/images/supvsconf.html)
 
 I could also create a network graph using a min_support=1 to generate the frequent items and a min_threshold=1 for the confidence rules. 
 
