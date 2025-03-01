@@ -40,7 +40,28 @@ In the ARM Parkinsons notebook, I separated the transactions with Parkinsons and
 
 image
 
-Then, I used the apriori algorithm to generate the frequent itemsets. For the Parkinsons transactions, I used a high min_support threshold because the majority of the bacterial names reoccur in each row. 
+Then, I used the apriori algorithm to generate the frequent itemsets. For the Parkinsons transactions, I used a high min_support threshold of 0.97 because the majority of the bacterial names reoccur in each row. From there, I could generate the rules. The top 15 rules for confidence, sorted in decreasing order, using a min_threshold of one, are shown below.
+
+image 
+
+The top 15 rules for support, sorted in decreasing order, using a min_threshold of 0.97, are shown below. 
+
+image
+
+The top 15 rules for lift, sorted in decreasing order, using a min_threshold of one, are shown below. 
+
+image 
+
+Using the plotly library, I generated a scatter plot of support vs confidence with the hue as support. This was created using the rules generated from confidence with a min_threshold of 0.85. 
+
+image 
+
+I could also create a network graph using a min_support=1 to generate the frequent items and a min_threshold=1 for the confidence rules. 
+
+image 
+
+
+
 
 
 
