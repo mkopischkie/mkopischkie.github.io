@@ -7,7 +7,7 @@ classes: wide
 
 ## Methods 
 
-**K-Means** works by randomly placing centroids and adjusting the position of the centroids until the average distance of the points inside the cluster from the centroids is minimized. The user specifies the number of clusters and an equal number of centroids are randomly selected from the data by the computer. The data points that are the closest to a centroid make up that cluster. The algorithm, from scikit-learn, calculates the average position of the points in the cluster and updates the coordinates of the centroid. Then, the distances between the new centroid and all the data points are calculated, the data points are reassigned to the closest cluster, and the centroid coordinates are updated. This process continues repeating until the centroids and clusters stop updating. 
+**K-Means** works by randomly placing centroids and adjusting the position of the centroids until the average distance of the points inside the cluster from the centroids is minimized. Some of the distance metrics include Euclidean, Manhattan, and Cosine Similarity. The user specifies the number of clusters and an equal number of centroids are randomly selected from the data by the computer. The data points that are the closest to a centroid make up that cluster. The algorithm, from scikit-learn, calculates the average position of the points in the cluster and updates the coordinates of the centroid. Then, the distances between the new centroid and all the data points are calculated, the data points are reassigned to the closest cluster, and the centroid coordinates are updated. This process continues repeating until the centroids and clusters stop updating. 
 
 ![kmeans](/assets/images/kmeans_alg.jpg) 
 
@@ -21,6 +21,10 @@ There are two types of **Hierarchial Clustering**:
 
 ![divisive](/assets/images/divisive.jpg) 
 
+This image below clarifies the possible distance metrics used in clustering algorithms: 
+
+image
+
 
 ### Compare and Contrast Methods: 
 
@@ -28,7 +32,7 @@ There are two types of **Hierarchial Clustering**:
 
 ## Data Prep
 
-For clustering, I used the dataset named combined_data_with_extra_data.csv. This dataset contains all the cleaned data frome the GMRepo and the NCBI. Reading in the file, the original dataframe looked like this:
+My goal for clustering is to separate and classify neurological disorders based on their clusters. Although I will have to use PCA to visualize the clusters, because I have more than three features, I hope to observe distinguished clusters due to differences in gut bacteria. For the algorithms, I used the dataset named combined_data_with_extra_data.csv. This dataset contains all the cleaned data frome the GMRepo and the NCBI. Reading in the file, the original dataframe looked like this:
 
 ![Orig](/assets/images/orig_df_clust.jpg) 
 
@@ -141,21 +145,17 @@ Normalized Mutual Information (Hier.):  0.20469003989447723 | Normalized Mutual 
 
 ## Conclusions
 
-Standardizing my data with standard scalar produced a silhouette graph that indicates I should use k=2 and k=4. I also used k=9 because I have nine unique neurological disorders, some that are a combination of two. The dendrogram appears to recommend using a k=4. 
-
-Without standardizing my data, the silhouette graph indicates that I should use k=3 and k=9. I also performed clustering with nine clusters for the reason I decsribed above. Although these have lower silhouette scores overall, these k values make more intuitive sense. The individual neurological disorders I am looking at are: Parkinsons, Alzheimers, Schizophrenia, Epilepsy, Bipolar Disorder, and Depression. These disorders represent both neurodegenerative and psychiatric disorders. Since I was also clustering with a healthy control group, there are three broad clusters that represent the neurological disorders. The k=6 is interesting has I have six unique and individual disorders, but one healthy control group as well. 
-
-The k=9 I found most interesting between the standardized and unstandardized datasets. Even though the unstandarized one has a higher silhouette score, the standardized dataset has a higher NMI score, which represents how well the clustered labels fit the true labels. 
+Standardizing my data with standard scalar produced a silhouette graph that indicates I should use k=2 and k=4. I also used k=9 because I have nine unique neurological disorders, some that are a combination of two. The dendrogram appears to recommend using a k=4. Without standardizing my data, the silhouette graph indicates that I should use k=3 and k=6. I also performed clustering with nine clusters for the reason I decsribed previously. Although unstandardized clusters have lower silhouette scores overall, the k values make more intuitive sense. The neurological disorders in my dataframe represent both neurodegenerative and psychiatric disorders, and a healthy control, representing the k=3. The k=9 I found most interesting between the standardized and unstandardized datasets. Even though the unstandarized clusters have a higher silhouette score, the standardized dataset has a higher NMI score, which represents how well the clustered labels fit the true labels. 
 
 The DBSCAN clustering method has a hard time clustering more than two groups together. This makes sense given that all my data appears densely packed together and I'm analyzing small differences in bacteria or concentrations in the gut microbiome. However, DBSCAN still prints an interesting result for the standardized dataset. It appears to have two unique clusters, which could possibly represent the healthy control groups and those with neurological disorders. 
 
-This led me to perform additional clustering on smaller datasets. First, I wanted to see if there was a difference in performance between neurdegenerative disorders with a healthy control, and between psychiatric diseases. 
+This led me to perform additional clustering on smaller datasets. I wanted to see if there was a difference in performance between neurdegenerative disorders with a healthy control, and between psychiatric diseases. Clustering between Parkinsons, Alzheimers, and a healthy control yielded very positive results. After completing PCA, 99.9% of the variance in my dataset was captured with the main contribution factors being age, bmi, and sex. I wanted to keep sex in this dataframe for clustering to see if it had an impact on the gut microbiome composition and neurological disorders. I used the command pd.get_dummies() and found that my scores were much higher than if I dropped sex from this dataframe. Aside from a high silhouette score, my NMI score is also quite high, indicating that the predicted labels line up with the true labels well. 
 
-Clustering between Parkinsons, Alzheimers, and a healthy control yielded very positive results. After completing PCA, 99.9% of the variance in my dataset was captured with the main contribution factors being age, bmi, and sex. I wanted to keep sex in this dataframe for clustering because I want to observe the differences to see if sex has an impact on gut microbiome composition and neurological disorders. I used the command pd.get_dummies() and found that my scores were much higher than if I dropped sex from this dataframe. Aside from a high silhouette score, my NMI score is also quite high, indicating that the predicted labels line up with the true labels well. 
-
-Although clustering with Schizophrenia, Bipolar Disorder, and Depression didn't yield has high of scores as the neurdegenerative disorders, there were still a couple of interesting insights. There was less variance was captured in the 3D visualization than for the neurodegenerative disorders, the three most important features were Bacteroids and Prevotella, which appears twice. Going back to my visualizations with additional data, I see that Bacteroids are essentially missing from the psychiatric disorder microbiome, with a high increase in Prevotella in Bipolar Disorder as compared to the healthy control group. 
+Although clustering with Schizophrenia, Bipolar Disorder, and Depression didn't yield has high of scores as the neurdegenerative disorders, there were still a couple of interesting insights. There was less variance was captured in the 3D visualization than for the neurodegenerative disorders. And the three most important features were Bacteroids and Prevotella, which appears twice. Going back to my visualizations with additional data, I see that Bacteroids are essentially missing from the psychiatric disorder microbiome, with a high increase in Prevotella in Bipolar Disorder as compared to the healthy control group. Indicating that the clustering results correlate well with what we would expect. 
 
 Next, I wanted to see how individual neurological disorders would cluster against the healthy control group. First, Parkinsons maintained a high variance captured and silhouette score, but the NMI score was surprisingly low. I was curious if either the Parkinsons group or the Healthy group contributed more to the lower NMI score, so I ran a similar test with Schizophrenia and a Healthy control. I saw the same things with a high silhouette score but a low NMI score. I ran a confusion matrix and found that the algorithm was labeling more healthy individuals as individuals with schizophrenia. From this information, I believe that I need to collect more data, especially on a healthy control. 
+
+Clustering between the healthy control and an individual neurological disorder separated very well. This would be useful in classifying a new sample. A larger model could be built on this that clusters each neurological disorder separately with the control group. Doing that separately may increase the overall accuracy, represented by the NMI score. 
 
 Overall, both K-Means and Hierarchial Clustering separated the data well and generally performed better on smaller datasets. My next steps include: collecting more data, refining the algorithms, trying new clustering algorithms, and running confusion matricies if the NMI score is still low. 
 
