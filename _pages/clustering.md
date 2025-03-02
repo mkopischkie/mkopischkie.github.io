@@ -5,7 +5,9 @@ layout: single
 classes: wide
 ---
 
-## Methods 
+## Overview & Methods 
+
+My goal for clustering is to separate and classify neurological disorders based on their clusters. Although I will have to use PCA to visualize the clusters, because I have more than three features, I hope to observe distinguished clusters due to differences in gut bacteria.
 
 **K-Means** works by randomly placing centroids and adjusting the position of the centroids until the average distance of the points inside the cluster from the centroids is minimized. Some of the distance metrics include Euclidean, Manhattan, and Cosine Similarity. The user specifies the number of clusters and an equal number of centroids are randomly selected from the data by the computer. The data points that are the closest to a centroid make up that cluster. The algorithm, from scikit-learn, calculates the average position of the points in the cluster and updates the coordinates of the centroid. Then, the distances between the new centroid and all the data points are calculated, the data points are reassigned to the closest cluster, and the centroid coordinates are updated. This process continues repeating until the centroids and clusters stop updating. 
 
@@ -32,7 +34,7 @@ This image below clarifies some of the possible distance metrics used in cluster
 
 ## Data Prep
 
-My goal for clustering is to separate and classify neurological disorders based on their clusters. Although I will have to use PCA to visualize the clusters, because I have more than three features, I hope to observe distinguished clusters due to differences in gut bacteria. For the algorithms, I used the dataset named combined_data_with_extra_data.csv. This dataset contains all the cleaned data frome the GMRepo and the NCBI. Reading in the file, the original dataframe looked like this:
+For the algorithms, I used the dataset named combined_data_with_extra_data.csv. This dataset contains all the cleaned data frome the GMRepo and the NCBI. Reading in the file, the original dataframe looked like this:
 
 ![Orig](/assets/images/orig_df_clust.jpg) 
 
