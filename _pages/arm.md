@@ -71,6 +71,19 @@ I could also create a network graph using a min_support=1 to generate the freque
 [View Binned Transaction Data Graph](/assets/images/overview_plotly.html)
 
 
+## Conclusions
+
+When comparing these results to the final graph on the data visualization page, it's clear that the rules generated are accurate across the neurological disorders. For Parkinsons, the network visual contains associations between Bacteroids, Ruminoccous, and Oscillospira. And from the final graph on the visualizations page, those three bacterial genus are either in excess compared to the control group, or in a deficiency. Therefore, these three genus may play a crucial role in detecting Parkinsons from a gut microbiome. 
+
+Because of the way I filtered the dataframes for the separate neurological disorders, it's hard to obtain concrete findings from the top rules for confidence, lift, and support. Each bacterial genus occurs frequently in each sample, so the values for the three association measures are all very high. 
+
+The best visuals for all this information, I believe, is the four additional visualization graphs. These plots still maintain some information about the relative abundance for each bacteria. The first three isolate a particular neurological disorder and plot the suport vs. confidence for the binned transaction data. The final plot is one where I didn't filter for any neurological disorder and plotted the support vs. confidence for all the transaction data that met the thresholds. For the first three graphs, these thresholds were around 0.01 for the frequent itemsets and 0.85 for the confidence rules. The final graph used 0.01 for the frequent itemsets as well and 0.95 for the confidence rules. The min_support threshold had to be very low since I was using a large dataframe and some neurological disorders may only occur 50 times. 
+
+Association rule mining will be useful as I continue completing this project because for new samples, I can identify the association rules and compare them to the rules for each neurological disorder. This can help to classify a new sample and refine the current rules to increase the accuracy. 
+
+
+
+
 
 
 
