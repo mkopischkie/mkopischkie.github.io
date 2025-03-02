@@ -68,6 +68,8 @@ I could also create a network graph using a min_support=1 to generate the freque
 
 [View Depression Graph](/assets/images/dep_plotly.html)
 
+[View Binned Transaction Data Graph](/assets/images/overview_plotly.html)
+
 
 
 
