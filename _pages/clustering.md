@@ -24,7 +24,7 @@ There are two types of **Hierarchial Clustering**:
 
 ### Compare and Contrast Methods: 
 
-
+![clustering](/assets/images/clustering.jpg) 
 
 ## Data Prep
 
