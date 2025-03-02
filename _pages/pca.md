@@ -47,11 +47,12 @@ Then, I created a new data frame that retains at least 95% of the variance from 
 
 ![95df](/assets/images/park_pca_df_end.jpg) 
 
-This new dataframe only removed three principal components, which I expected since I did the computation using the dataframe obtained with the threshold. 
+## Conclusions
+
+This new dataframe only removed three principal components, which is expected since the computation was performed using the dataframe obtained with the threshold. The dataframes used before PCA and after PCA both contained more than three features, but the visuals provided a great representation of the data. PCA is plotting these features by making linear combinations that maximize the variance maintained. If we were to just plot the first three features from my dataframe, we would get a very different result than what we see with PCA. Even though it wasn't able to remove many features from my original dataframe, I need PCA to visualize my results. PCA is essential in being able to visualize data for a dataframe with more than three features. Both graphs I provided indicate a clear difference between two groups, implying that clustering may perform well on this data. 
 
 
-
-### References
+## References
 [1] GeeksforGeeks. Mathematical approach to pca. https://www.geeksforgeeks.org/mathematical- approach-to-pca/, n.d. Accessed: 2024-12-06.
 
 [2] Statology. How to read a covariance matrix. https://www.statology.org/how-to-read-covariance- matrix/, n.d. Accessed: 2024-12-06.
