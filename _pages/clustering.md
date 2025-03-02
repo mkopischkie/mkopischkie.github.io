@@ -21,7 +21,7 @@ There are two types of **Hierarchial Clustering**:
 
 ![divisive](/assets/images/divisive.jpg) 
 
-This image below clarifies the possible distance metrics used in clustering algorithms: 
+This image below clarifies some of the possible distance metrics used in clustering algorithms. After running many clustering algorithms, the euclidean distance yielded the best scores, so I used the default euclidean distance metric for my algorithms. 
 
 ![distance](/assets/images/distancemetrics.jpg) 
 
