@@ -25,10 +25,7 @@ Now that all my features are numeric attributes, I can begin the PCA computation
 
 Next, I specify that I want to see the first three principal components and print the explained variance ratio. This tells us the first three principal components, and how much variance they contribute to the dataset. My output indicates that the first PC is responsible for 0.15852208 of the variance, the second PC is respondible for 0.1002905 of the variance, and the third is responsible for 0.09367044. These first three components only represent about 3.5% of the variance in my dataset. However, this makes sense given that this data frame is trimmed from the full panel and each column has a heavier weight. The explained variances and cummulative of the second and third principal components, as well as the eigenvalues are seen below. 
 
-![Explained](/assets/images/park_explained_var.jpg) 
-![Cum](/assets/images/park_cum_var.jpg) 
-![Eigen](/assets/images/park_eigen_better.jpg) 
-
+![Explained](/assets/images/vareigen.jpg) 
 
 The following graph represents the first three principal components: 
 
