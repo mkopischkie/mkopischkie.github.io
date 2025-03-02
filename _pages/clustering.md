@@ -23,7 +23,7 @@ There are two types of **Hierarchial Clustering**:
 
 This image below clarifies the possible distance metrics used in clustering algorithms: 
 
-image
+![distance](/assets/images/distancemetrics.jpg) 
 
 
 ### Compare and Contrast Methods: 
