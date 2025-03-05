@@ -70,6 +70,18 @@ We conclude that we would play golf given that it is sunny with weak winds.
 I will apply this algorithm to my dataset, combined_data_with_extra_data2.csv, which is a labeled record data dataframe. The label column, 'Golf' in the above example, has to be in the dataset for the probabilities to be calculated. This algorithm requires training and testing data, so I will split my dataframe to 80% training and 20% testing. The model training is necessary in Naive Bayes because without it, the model wouldn't have predetermined probabilities, including the prior, likelihood, and estimate probabilities. If implemented accurately, this algorithm should determine the probability of a particular neurological disorder, given the evidence/features present. 
 
 
+There are various Naive Bayes algorithms to use including: Gaussian, Multinominal, Bernoulli, and Categorical. 
+- *Gaussian NB*: works best for dataframes containing continuous features. It assumes that each feature operates under a Gaussian, or normal, distribution. Similar to what I described above, the algorithm determines the maximum posterior probability of a data point and assigns the points to that class. This algorithm performs well on data that already assumes a normal distribution, including house prices or income.
+- *Multinominal NB*: works best on discrete data typically used in text mining. It counts the word frequency in documents to classify texts. This algorithm is often used in spam email detection. To estimate the likeliness of a word belonging to a particular class, Multinominal NB uses the maximum likelihood estimator, parametrized by the word frequency, total number of words, and vocabulary size.
+- *Bernoulli NB*: is best used on binary data whose features follow the Bernoulli distribution. This algorithm can be implemented for text data that was transformed into binary entries to classify texts or detect spam emails.
+- *Categorical NB*: works best with discrete features that belong to a multinomial distribution. Some data sources include surveys or medical charts where the participant answers in categories such as low, medium, or high. Based on the probabilities calculated during training, the algorithm assigns the data point to the class with the highest posterior probabilitiy.
+
+
+
+
+
+
+
 
 
 
