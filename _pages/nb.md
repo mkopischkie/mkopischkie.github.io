@@ -59,6 +59,8 @@ $$ P(Yes | Sunny, Weak) > P(No | Sunny, Weak) $$
 
 We conclude that we would play golf given that it is sunny with weak winds. 
 
+I will apply this algorithm to my dataset, combined_data_with_extra_data2.csv, which is a labeled record data dataframe. The label column, 'Golf' in the above example, has to be in the dataset for the probabilities to be calculated. This algorithm requires training and testing data, so I will split my dataframe to 80% testing and 20% training. The model training is necessary in Naive Bayes because without it, the model wouldn't have predetermined probabilities, including the prior, likelihood, and estimate probabilities. If implemented accurately, this algorithm should determine the probability of a particular neurological disorder, given the evidence/features present. 
+
 
 
 
