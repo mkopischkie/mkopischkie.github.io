@@ -18,7 +18,7 @@ Naive Bayes is a supervised machine learning technique that operates under Bayes
 
 The probability of playing golf on a given day can be calculated using Bayes Theorem, or the equation for conditional probability: 
 
-$$ P(A | E) = \frac{P(E | A) P(A)}{P(E)} $$
+\[ P(A | E) = \frac{P(E | A) P(A)}{P(E)} \]
 
 Where, 
 - $P(A | E)$ is the posterior, or the probability of A, the response, being true, given that E is true
