@@ -26,4 +26,29 @@ Where,
 - $P(A)$ is the prior, or how likely the response is true
 - $P(E)$ is the evidence, or the probability of the evidence being true given all possible responses
 
+Therefore, if we want to find the probability of playing golf given that it is sunny with weak winds, we perform the following calculation.  
+
+$$ P(Yes) = \frac{3}{4} $$
+$$ P(No) = \frac{1}{4} $$
+
+$$ P(Sunny | Yes) = \frac{count(Sunny | Yes)}{count(Yes)} = \frac{1}{3} $$
+$$ P(Sunny | No) = \frac{1}{1} = 1 $$
+
+$$ P(Weak | Yes) = \frac{count(Weak | Yes)}{count(Yes)} = \frac{2}{3} $$
+$$ P(Weak | No) = \frac{0}{1} = 0 $$
+
+$$ P(Yes | Sunny, Weak) = P(Sunny | Yes) * P(Weak | Yes) * P(Yes) = \frac{1}{3} * \frac{2}{3} * \frac{3}{4} = \frac{1}{6} $$
+$$ P(No | Sunny, Weak) = P(Sunny | No) * P(Weak | No) * P(No) = 1 * 0 * \frac{1}{4} = 0 $$
+
+The conditional probability formula states that we should divide these results by the evidence term, but the evidence term is the same in both cases so I am not including it in this calculation. This often occurs when using the Naive Bayes algorithm, so we generally ignore that term in the computation. 
+
+$$ P(Yes | Sunny, Weak) > P(No | Sunny, Weak) $$
+
+We conclude that we would play golf given that it is sunny with weak winds. 
+
+
+
+
+
+
 
