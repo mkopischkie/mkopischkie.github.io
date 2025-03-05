@@ -28,7 +28,7 @@ The probability of playing golf on a given day can be calculated using Bayes The
 $$ P(A | E) = \frac{P(E | A) P(A)}{P(E)} $$
 
 
-Where, $P(A \mid E)$ is the posterior, or the probability of A, the response, being true, given that E is true. $P(E \mid A)$ is the likelihood, or the probability of the observed variable(s) being true, given A, the response, is true. $P(A)$ is the prior, or how likely the response is true. And $P(E)$ is the evidence, or the probability of the evidence being true given all possible responses.
+Where, $ P(A \mid E) $ is the posterior, or the probability of A, the response, being true, given that E is true. $P (E \mid A) $ is the likelihood, or the probability of the observed variable(s) being true, given A, the response, is true. $ P(A) $ is the prior, or how likely the response is true. And $ P(E) $ is the evidence, or the probability of the evidence being true given all possible responses.
 
 
 Therefore, if we want to find the probability of playing golf given that it is sunny with weak winds, we perform the following calculation.  
@@ -59,7 +59,7 @@ $$ P(Yes | Sunny, Weak) > P(No | Sunny, Weak) $$
 
 We conclude that we would play golf given that it is sunny with weak winds. 
 
-I will apply this algorithm to my dataset, combined_data_with_extra_data2.csv, which is a labeled record data dataframe. The label column, 'Golf' in the above example, has to be in the dataset for the probabilities to be calculated. This algorithm requires training and testing data, so I will split my dataframe to 80% testing and 20% training. The model training is necessary in Naive Bayes because without it, the model wouldn't have predetermined probabilities, including the prior, likelihood, and estimate probabilities. If implemented accurately, this algorithm should determine the probability of a particular neurological disorder, given the evidence/features present. 
+I will apply this algorithm to my dataset, combined_data_with_extra_data2.csv, which is a labeled record data dataframe. The label column, 'Golf' in the above example, has to be in the dataset for the probabilities to be calculated. This algorithm requires training and testing data, so I will split my dataframe to 80% training and 20% testing. The model training is necessary in Naive Bayes because without it, the model wouldn't have predetermined probabilities, including the prior, likelihood, and estimate probabilities. If implemented accurately, this algorithm should determine the probability of a particular neurological disorder, given the evidence/features present. 
 
 
 
