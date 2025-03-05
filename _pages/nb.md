@@ -28,7 +28,15 @@ The probability of playing golf on a given day can be calculated using Bayes The
 $$ P(A | E) = \frac{P(E | A) P(A)}{P(E)} $$
 
 
-Where, $ P(A \mid E) $ is the posterior, or the probability of A, the response, being true, given that E is true. $P (E \mid A) $ is the likelihood, or the probability of the observed variable(s) being true, given A, the response, is true. $ P(A) $ is the prior, or how likely the response is true. And $ P(E) $ is the evidence, or the probability of the evidence being true given all possible responses.
+Where, 
+
+$$ P(A \mid E) \text{is the posterior, or the probability of A, the response, being true, given that E is true} $$
+
+$$P (E \mid A) \text{is the likelihood, or the probability of the observed variable(s) being true, given A, the response, is true} $$
+
+$$ P(A) \text{is the prior, or how likely the response is true} $$
+
+$$ P(E) \text{is the evidence, or the probability of the evidence being true given all possible responses} $$
 
 
 Therefore, if we want to find the probability of playing golf given that it is sunny with weak winds, we perform the following calculation.  
