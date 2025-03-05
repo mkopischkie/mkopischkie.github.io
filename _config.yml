@@ -113,3 +113,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
