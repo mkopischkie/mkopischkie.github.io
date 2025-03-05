@@ -5,6 +5,13 @@ layout: single
 classes: wide
 ---
 
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 ## Overview 
 
 Naive Bayes is a supervised machine learning technique that operates under Bayes Theorem, also known as conditional probability. It assumes that each feature is independent of one another and calcualtes the probabilities for the desired outcome. A common explanation of the algorithm is shown on a dataset that indicates whether or not to play golf. 
