@@ -114,6 +114,12 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 
 ![Final](/assets/images/trans_binned_data.jpg) 
 
+## Notes: 
+- Each label contains a different number of samples, so I experimented with Random Under Sampler (RUS), Random Over Sampler (ROS), and oversampling with SMOTE. However, each model performed best with no minority/majority class adjustments
+
+
+## Model Visuals 
+
 
 
 
