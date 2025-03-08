@@ -116,6 +116,7 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 
 ## Notes: 
 - Each label contains a different number of samples, so I experimented with Random Under Sampler (RUS), Random Over Sampler (ROS), and oversampling with SMOTE. However, each model performed best with no minority/majority class adjustments
+- When I refer to building a model with all disorder (overlapping conditions), it means that some samples are diagnosed with Bipolar Disorder and Schizophrenia, while others may be one or the other. So, the unique conditions may be 'Bipolar Disorder, Schizophrenia', 'Bipolar Disorder', 'Schizophrenia' 
 
 
 ## Model Visuals 
@@ -135,6 +136,9 @@ Gaussian Accuracy:
 | Psych Disorders | 0.7946   | 
 
 
+- NM NB - all disorders
+- NM NB - neurodegenerative disorders
+- NM NB - psychological disorders 
 
 
 
