@@ -126,6 +126,7 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 - Gaussian NB - psychological disorders
   ![Final](/assets/images/gaussian_nb_psych.jpg)
 
+
 Gaussian Accuracy: 
 | Model           | Accuracy |
 | --------------- | -------- | 
