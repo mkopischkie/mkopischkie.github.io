@@ -89,15 +89,15 @@ image
 
 Since **Mulitnominal Naive Bayes** is typically used on text data, I will alter my original dataframe similar to how I did for association rule mining (ARM). By converting each entry to the corresponding column name, I can use this NB method. The text-formatted data is pictured below. 
 
-image
+![Final](/assets/images/trans_data.jpg) 
 
 Now, I can use one-hot-encoding to count the frequency that each bacteria appears in a given sample, so each sample is represented as binary entries. 
 
-image
+![Final](/assets/images/ohe_df.jpg) 
 
 The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. Except as I converted the relative abundances to the column names, I created bins and labels to associate each entry with a high, medium, or low amount of a unique bacteria. I one-hot-encoded this data as well. A snapshot of my data before one-hot-encoding is pictured below. 
 
-image 
+![Final](/assets/images/trans_binned_data.jpg) 
 
 
 
