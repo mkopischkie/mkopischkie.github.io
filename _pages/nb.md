@@ -129,6 +129,7 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 
 
 Gaussian Accuracy: 
+
 | Model           | Accuracy |
 | --------------- | -------- | 
 | All disorders   | 0.8261   |
