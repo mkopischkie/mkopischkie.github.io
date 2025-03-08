@@ -77,8 +77,27 @@ There are various Naive Bayes algorithms to use including: Gaussian, Multinomina
 - *Categorical NB*: works best with discrete features that belong to a multinomial distribution. Some data sources include surveys or medical charts where the participant answers in categories such as low, medium, or high. Based on the probabilities calculated during training, the algorithm assigns the data point to the class with the highest posterior probabilitiy.
 
 
+## Data Prep
 
+**Gaussian Naive Bayes** requires continuous data with discrete labels. As the data in my combined_data_with_extra_data2.csv is already continuous, I only need to map the labels to integers and drop the labels from the data. My original data set is pictured below. 
 
+image
+
+Then, I split the data into training and testing sets using the train_test_split function from scikit learn. The data I use to perform Gaussian NB is pictured below. 
+
+image 
+
+Since **Mulitnominal Naive Bayes** is typically used on text data, I will alter my original dataframe similar to how I did for association rule mining (ARM). By converting each entry to the corresponding column name, I can use this NB method. The text-formatted data is pictured below. 
+
+image
+
+Now, I can use one-hot-encoding to count the frequency that each bacteria appears in a given sample, so each sample is represented as binary entries. 
+
+image
+
+The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. Except as I converted the relative abundances to the column names, I created bins and labels to associate each entry with a high, medium, or low amount of a unique bacteria. I one-hot-encoded this data as well. A snapshot of my data before one-hot-encoding is pictured below. 
+
+image 
 
 
 
