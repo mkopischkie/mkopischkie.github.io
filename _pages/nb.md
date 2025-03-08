@@ -81,7 +81,7 @@ There are various Naive Bayes algorithms to use including: Gaussian, Multinomina
 
 **Gaussian Naive Bayes** requires continuous data with discrete labels. As the data in my combined_data_with_extra_data2.csv is already continuous, I only need to map the labels to integers and drop the labels from the data. My original data set is pictured below. 
 
-image
+![Orig](/assets/images/combined_df.jpg) 
 
 Then, I split the data into training and testing sets using the train_test_split function from scikit learn. The data I use to perform Gaussian NB is pictured below. 
 
