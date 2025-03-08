@@ -85,7 +85,7 @@ There are various Naive Bayes algorithms to use including: Gaussian, Multinomina
 
 Then, I split the data into training and testing sets using the train_test_split function from scikit learn. The data I use to perform Gaussian NB is pictured below. 
 
-image 
+![Final](/assets/images/final_df_clus.jpg)  
 
 Since **Mulitnominal Naive Bayes** is typically used on text data, I will alter my original dataframe similar to how I did for association rule mining (ARM). By converting each entry to the corresponding column name, I can use this NB method. The text-formatted data is pictured below. 
 
