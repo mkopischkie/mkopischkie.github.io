@@ -124,7 +124,16 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 - Gaussian NB - neurodegenerative disorders
   ![Final](/assets/images/gaussian_nb_neuro.jpg)
 - Gaussian NB - psychological disorders
-  ![Final](/assets/images/gaussian_nb_psych.jpg) 
+  ![Final](/assets/images/gaussian_nb_psych.jpg)
+
+Gaussian Accuracy: 
+| Model           | Accuracy |
+| --------------- | -------- | 
+| All disorders   | 0.8261   |
+| Neuro disorders | 0.9688   |
+| Psych Disorders | 0.7946   | 
+
+
 
 
 
