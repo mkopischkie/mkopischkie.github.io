@@ -89,15 +89,15 @@ Then, I split the data into training and testing sets using the train_test_split
 
 A small snippet of the training set with the corresponding training labels is pictured below: 
 
-| X_train (data) | y_train (label) |
-| -------------- | --------------- |
-| image          | image           | 
+| X_train (data)                        | y_train (label)                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Orig](/assets/images/xtrain_nb.jpg) | ![Orig](/assets/images/ytrain_nb.jpg) | 
 
 Another snippet of the testing set with the corresponding testing labels is pictured below: 
 
-| X_test (data) | y_test (label) |
-| -------------- | --------------- |
-| image          | image           | 
+| X_test (data)                        | y_test (label)                       |
+| -------------------------------------| ------------------------------------ |
+| ![Orig](/assets/images/xtest_nb.jpg) | ![Orig](/assets/images/ytest_nb.jpg) | 
 
 
 These data sets must be disjoint to ensure proper evaluation. A model cannot be tested on the same data that it was trained on because it would overfit the data. This leads to an inflation in the accuracy and a model that would perform well on the given data, but poorly on unseen data. The next two models also require training and testing sets, but I will leave out the images to avoid redundancy.  
