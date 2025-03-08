@@ -119,6 +119,12 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 
 
 ## Model Visuals 
+- Gaussian NB - all disorders (with overlapping unique conditions)
+  ![Final](/assets/images/gaussian_nb_all_data.jpg)
+- Gaussian NB - neurodegenerative disorders
+  ![Final](/assets/images/gaussian_nb_neuro.jpg)
+- Gaussian NB - psychological disorders
+  ![Final](/assets/images/gaussian_nb_psych.jpg) 
 
 
 
