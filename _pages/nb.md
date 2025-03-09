@@ -120,6 +120,9 @@ The data preparation for **Categorical Naive Bayes** worked similarly to MN NB. 
 
 
 ## Model Visuals 
+
+### Gaussian NB
+
 - Gaussian NB - all disorders (with overlapping unique conditions)
   ![Final](/assets/images/gaussian_nb_all_data.jpg)
 - Gaussian NB - neurodegenerative disorders
@@ -137,6 +140,8 @@ Gaussian Accuracy:
 | Psych Disorders | 0.7946   | 
 
 
+### Multinominal NB
+
 - NM NB - all disorders
   ![Final](/assets/images/mn_nb_all_data.jpg)
 - NM NB - neurodegenerative disorders
@@ -152,6 +157,9 @@ Multinominal Accuracy:
 | All disorders   | 0.7795   |
 | Neuro disorders | 0.9844   |
 | Psych Disorders | 0.7407   |
+
+
+### Categorical NB
 
 
 - Categorical NB - all disorders (with overlapping unique conditions)
