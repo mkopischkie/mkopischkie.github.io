@@ -155,8 +155,20 @@ Multinominal Accuracy:
 
 
 - Categorical NB - all disorders (with overlapping unique conditions)
+  ![Final](/assets/images/categorical_nb_all_data.jpg)
 - Categorical NB - neurodegenerative disorders
+  ![Final](/assets/images/categorical_nb_neuro.jpg)
 - Categorical NB - psychological disorders
+  ![Final](/assets/images/categorical_nb_psych.jpg)
+
+
+Categorical Accuracy: 
+
+| Model           | Accuracy |
+| --------------- | -------- | 
+| All disorders   | 0.8571   |
+| Neuro disorders | 0.9688   |
+| Psych Disorders | 0.8889   |  
 
 
 
