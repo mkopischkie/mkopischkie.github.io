@@ -141,7 +141,8 @@ Gaussian Accuracy:
   ![Final](/assets/images/mn_nb_all_data.jpg)
 - NM NB - neurodegenerative disorders
   ![Final](/assets/images/mn_nb_neuro.jpg)
-- NM NB - psychological disorders 
+- NM NB - psychological disorders
+  ![Final](/assets/images/mn_nb_psych.jpg)
 
 
 Multinominal Accuracy: 
@@ -150,7 +151,7 @@ Multinominal Accuracy:
 | --------------- | -------- | 
 | All disorders   | 0.7795   |
 | Neuro disorders | 0.9844   |
-| Psych Disorders | tbd      |
+| Psych Disorders | 0.7407   |
 
 
 - Categorical NB - all disorders (with overlapping unique conditions)
