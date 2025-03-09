@@ -155,7 +155,7 @@ Multinominal Accuracy:
 
 
 - Categorical NB - all disorders (with overlapping unique conditions)
-  ![Final](/assets/images/categorical_nb_all_data.jpg)
+  ![Final](/assets/images/categorical_nb_full_data.jpg)
 - Categorical NB - neurodegenerative disorders
   ![Final](/assets/images/categorical_nb_neuro.jpg)
 - Categorical NB - psychological disorders
