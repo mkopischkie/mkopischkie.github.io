@@ -17,6 +17,17 @@ The way that a decision tree is split up is influenced by metrics such as Inform
 
 The information gain is highly correlated with entropy, which is the measure of randomness and disorder. For instance, if three people surfed when there was no swell and three people did not surf with no swell, the entropy would be high since there is more randomness to decide whether to surf or not. The increase in entropy correlates with a decrease in information gain, since there is not a clear answer to the question asked. 
 
-The Gini Impurity measures the likelihood of misclassification of a data point to a particular category. Therefore, the decision tree algorithm splits the dataset at nodes with the lowest gini impurity. The metric is measured by subtracting the sum of the squared probabilities of a datapoint belonging to a particular class from one. For example, if a sample has an 80% probability of belonging to class 1 and a 20% probability of belonging to class 2, the Gini impurity would be calculated as follows: 
+The Gini Impurity measures the likelihood of misclassification of a data point to a particular category. Therefore, the decision tree algorithm splits the dataset at nodes with the lowest gini impurity. The metric is measured by subtracting the sum of the squared probabilities of a datapoint belonging to a particular class from one. For example, if the algorithm is determining which node to split the data at, and one sample has an 80% probability of belonging to class 1 and a 20% probability of belonging to class 2, the Gini impurity would be calculated as follows: 
 
 $$ \text{Gini Impurity} = 1 - (0.8^2 + 0.2^2) = 0.32 $$
+
+If, at the other node, the same sample has a 70% probabilitiy of belonging to class 1 and a 30% probability of belonging to class 2, the Gini impurity would be 0.45. Therefore, the algorithm would split the data at the first node which has the lower Gini impurity. 
+
+Decision trees have many practical applications in strategy formulation, risk assessment, customer segmentation, and medical diagnositcs. Here, I hope to use decision trees to predict/classify the samples to the corresponding neurological disorder. 
+
+## Data Prep
+
+
+
+
+
