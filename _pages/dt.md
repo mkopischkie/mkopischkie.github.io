@@ -27,7 +27,7 @@ Decision trees have many practical applications in strategy formulation, risk as
 
 ## Data Prep
 
-
+Numerical data types are required for decision tree performance. Any categorical data types need to be transformed before running the model. 
 
 
 
