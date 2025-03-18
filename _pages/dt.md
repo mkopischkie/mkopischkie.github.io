@@ -50,9 +50,11 @@ Before modeling a decision tree, all the dataframes needed to be split into trai
 ## Models 
 
 1. DT with all data
-2. DT - neurodegenerative disorders
-3. DT - psychological disorders
-4. DT with relevant attributes such as 'Age', 'BMI', 'Sex'
+   ![Orig](/assets/images/dt_alldata_plot.jpg)
+   ![Orig](/assets/images/dt_alldata_graphs.jpg)  
+3. DT - neurodegenerative disorders
+4. DT - psychological disorders
+5. DT with relevant attributes such as 'Age', 'BMI', 'Sex'
 
 
 
