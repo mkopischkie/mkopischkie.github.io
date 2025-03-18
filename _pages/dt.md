@@ -27,7 +27,32 @@ Decision trees have many practical applications in strategy formulation, risk as
 
 ## Data Prep
 
-Numerical data types are required for decision tree performance. Any categorical data types need to be transformed before running the model. 
+Numerical data types are required for decision tree performance. Any categorical data types need to be transformed before running the model. To analyze a decision tree with all the data I collected in my combined_data_with_extra_data2.csv, I dropped all the columns besides the bacterial genuses. I needed to do this because some disorders didn't contain the relevant information including Age, BMI, or Sex. By dropping the rows without entries in these columns, I would lose individual disorders, such as Depression, all together. Before making any changes, my dataframe looked like this: 
+
+image 
+
+After making changes to model a decision tree with all my data, my dataframe looked like this: 
+
+image
+
+Then I split my data into a training and testing set and modeled the decision tree. Next, I wanted to model the neurodegenerative disorders, so I filtered my original dataframe to keep only the Parkinson's, Alzheimers, and Health conditions. In this new dataframe, all the samples containing these disorders had entries for Sex and Age. To keep these attributes, I mapped Sex to numerical labels and removed the rows with an Age less than one. My final neurodegenerative disorder dataframe looks like this: 
+
+image
+
+I also wanted to model the psychological disorders by filtering out the Parkinson's and Alzheimers conditions, keeping 'Health', 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', and 'Epilepsy', 'Depression', 'Schizophrenia'. This dataframe, similar to the first one, contained blank entries for Sex, BMI, and/or Age for some disorders, so I dropped all the columns except the bacterial genuses. Now, the dataframe looks the same as it did for the first model, but containing only the conditions listed above. 
+
+Next, I wanted to try to model the disorders that contain the relevant information such as Age, BMI, and Sex to see if there was an improvement in the accuracy. I filtered the original dataframe to drop any rows that have zero entries for these columns. The remaining conditions are 'Health', 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', and 'Epilepsy'. Additional filtering had to be performed to remove any Age's less than one. The final dataframe for this model looks like this: 
+
+image 
+
+Before modeling a decision tree, all the dataframes needed to be split into training and testing sets. This is necessary for the same reasons listed in the Naive Bayes tab. 
+
+## Models 
+
+1. DT with all data
+2. DT - neurodegenerative disorders
+3. DT - psychological disorders
+4. DT with relevant attributes such as 'Age', 'BMI', 'Sex'
 
 
 
