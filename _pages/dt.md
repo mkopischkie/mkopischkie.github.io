@@ -53,8 +53,14 @@ Before modeling a decision tree, all the dataframes needed to be split into trai
    ![Orig](/assets/images/dt_alldata_plot.jpg)
    ![Orig](/assets/images/dt_alldata_graphs.jpg)  
 3. DT - neurodegenerative disorders
-4. DT - psychological disorders
-5. DT with relevant attributes such as 'Age', 'BMI', 'Sex'
+   ![Orig](/assets/images/dt_neuro_plot.jpg)
+   ![Orig](/assets/images/dt_neuro_graphs.jpg) 
+5. DT - psychological disorders
+   ![Orig](/assets/images/dt_psych_plot.jpg)
+   ![Orig](/assets/images/dt_psych_graphs.jpg) 
+7. DT with relevant attributes such as 'Age', 'BMI', 'Sex'
+   ![Orig](/assets/images/dt_psych_sex.jpg)
+   ![Orig](/assets/images/dt_psych_sex_graphs.jpg) 
 
 
 
