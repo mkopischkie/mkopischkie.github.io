@@ -25,6 +25,8 @@ If, at the other node, the same sample has a 70% probabilitiy of belonging to cl
 
 Decision trees have many practical applications in strategy formulation, risk assessment, customer segmentation, and medical diagnositcs. Here, I hope to use decision trees to predict/classify the samples to the corresponding neurological disorder. 
 
+![dt](/assets/images/dt2.jpg)  
+
 ## Data Prep
 
 Numerical data types are required for decision tree performance. Any categorical data types need to be transformed before running the model. To analyze a decision tree with all the data I collected in my combined_data_with_extra_data2.csv, I dropped all the columns besides the bacterial genuses. I needed to do this because some disorders didn't contain the relevant information including Age, BMI, or Sex. By dropping the rows without entries in these columns, I would lose individual disorders, such as Depression, all together. Before making any changes, my dataframe looked like this: 
