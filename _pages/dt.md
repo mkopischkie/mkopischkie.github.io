@@ -62,5 +62,13 @@ Before modeling a decision tree, all the dataframes needed to be split into trai
    ![Orig](/assets/images/dt_psych_sex.jpg)
    ![Orig](/assets/images/dt_psych_sex_graphs.jpg) 
 
+### Model Accuracies 
+
+| Model                                    | Accuracy |
+| ---------------------------------------- | -------- | 
+| All data                                 | 0.8882   |
+| Neurodegenerative                        | 0.9841   |
+| Psychological                            | 0.8754   |
+| Psychological with Additional Attributes | 0.9333   | 
 
 
