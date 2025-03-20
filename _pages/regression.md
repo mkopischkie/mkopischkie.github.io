@@ -25,7 +25,7 @@ Both models are supervised and parametric. Supervised meaning that the model req
 
 The sigmoid function is written as, $\displaystyle f(x) = \frac{1}{1 + e^{-x}}$, where $x$ is the logit function, a linear combination of all the variables and weights, and is graphically represented below. 
 
-image 
+![Orig](/assets/images/sigmoid.jpg)  
 
 It works by interpreting the logit function, a continuous variable bounded between negative infinity and positive infinity, and transforms it into a probability. The probability is bounded between zero and one and represents the class that the sample most likely belongs to. The class is typically assigned by defining a threshold, so the sigmoid can classify each sample. 
 
