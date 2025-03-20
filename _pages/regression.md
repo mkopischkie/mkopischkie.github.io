@@ -5,13 +5,7 @@ layout: single
 classes: wide
 ---
 
-<script type="text/javascript" async
-  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
-</script>
-<script type="text/javascript" async
-  id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
+<script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"> </script> <script type="text/javascript" async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
 
 ## Overview 
 
@@ -29,7 +23,9 @@ Both models are supervised and parametric. Supervised meaning that the model req
 
 ### Sigmoid Function in Logistic Regression 
 
-The sigmoid function is written as $ f(x) = \frac{1}{1 + e^{-x}} $, where $x$ is the logit function, a linear combination of all the variables and weights, and is graphically represented below. 
+The sigmoid function is written as,
+$$ f(x) = \frac{1}{1 + e^{-x}} $$ , 
+where $x$ is the logit function, a linear combination of all the variables and weights, and is graphically represented below. 
 
 image 
 
