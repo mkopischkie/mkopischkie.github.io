@@ -23,7 +23,7 @@ Both models are supervised and parametric. Supervised meaning that the model req
 
 ### Sigmoid Function in Logistic Regression 
 
-The sigmoid function is written as, $f(x) = \frac{1}{1 + e^{-x}}$, where $x$ is the logit function, a linear combination of all the variables and weights, and is graphically represented below. 
+The sigmoid function is written as, $\displaystyle f(x) = \frac{1}{1 + e^{-x}}$, where $x$ is the logit function, a linear combination of all the variables and weights, and is graphically represented below. 
 
 image 
 
