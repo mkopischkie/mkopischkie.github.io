@@ -21,6 +21,8 @@ Logistic regression attempts to estimate the parameters of a relationship by min
 
 Both models are supervised and parametric. Supervised meaning that the model requires a training and testing set, and parametric meaning that a preexisting relationship in the data is assumed. However, linear regression returns a continuous number, whereas logistic regression returns a binary integer. Furthermore, each regression model requires a different data format; linear regression needs to learn on a continous response, such as height or weight, and logistic regression needs to learn on classification labels, such as high, medium, or low (2, 1, 0). 
 
+![Orig](/assets/images/log_lin.jpg)  
+
 ### Sigmoid Function in Logistic Regression 
 
 The sigmoid function, pictured below, depends on the logit function, a linear combination of all the variables and weights. 
