@@ -31,7 +31,7 @@ It works by interpreting the logit function, a continuous variable bounded betwe
 
 ### Maximum Likelihood in Logistic Regression 
 
-The maximum likelihood function maximizes the likelihood and log-likelihood equations that are derived from the sigmoid function. This essentially ensures that each sample is either as close to one or as close to zero probability as possible. The algorithm does this by taking the partial derivatives of the log-likelihood functions, dependent on the sigmoid function which is dependent on the original linear combination of features in the model, and setting it equal to zero. In logistic regression, this solution works out nicely where the maximum likelihood function is optimizing the actual value of y, subtracted by the predicted value of y, and the quantity multiplied by the features' weight. 
+The maximum likelihood function maximizes the likelihood and log-likelihood equations that are derived from the sigmoid function. This essentially ensures that each sample is either as close to one or as close to zero probability as possible. The algorithm does this by taking the partial derivatives of the log-likelihood functions, dependent on the sigmoid function which is dependent on the original linear combination of features in the model, and setting it equal to zero. In logistic regression, this solution works out nicely where the maximum likelihood function is optimizing the actual value of y, subtracted from the predicted value of y, and the quantity multiplied by the features' weight. 
 
 
 
