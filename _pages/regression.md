@@ -36,4 +36,32 @@ It works by interpreting the logit function, a continuous variable bounded betwe
 The maximum likelihood function maximizes the likelihood and log-likelihood equations that are derived from the sigmoid function. This essentially ensures that each sample is either as close to one or as close to zero probability as possible. The algorithm does this by taking the partial derivatives of the log-likelihood functions, dependent on the sigmoid function which is dependent on the original linear combination of features in the model, and setting it equal to zero. In logistic regression, this solution works out nicely where the maximum likelihood function is optimizing the actual value of y, subtracted from the predicted value of y, and the quantity multiplied by the features' weight. 
 
 
+## Data Prep
+
+Initially, I performed Logistic Regression on a numerical dataframe between the Healthy class and the Parkinsons class. Logistic Regression requires numerical, either float or integer, data types, and in this case, a binary classification label. Using the data from the final_df.csv file, I removed the unecessary conditions, apart from Health and Parkinsons. Then, I removed the Country and BMI columns, deleted any row with Age less than or equal to one, and mapped the male and female sex's to one and zero, respectively. Therefore, I was left with the Condition, or label, column, Sex, Age, and the bacterial genus' columns. 
+
+image 
+
+To perform logistic regression, I split my data and kept 80% as the training and 20% as the testing set. Experimenting with my code, I found that the highest accuracy was achieved when I used an oversampling technique, SMOTE. SMOTE creates synthetic training data in the minority class so that the length of the minority and majority classes are equal. In this case, the algoirhtm created data to add to the Parkinsons class to match the length of the Health class. It is important to note that the oversampling is only performed on the training data and not the testing data. 
+
+Per the instructions, I created another model that uses the same data frame that is used in Multinomial Naive Bayes. Again, I tested between the Health and Parkinsons classes, but dropped the columns that were not the bacterial genus'. 
+
+image
+
+I saved the label and dropped it from the dataframe berfore performing the following steps. Multinomial Naives Bayes performs best on text data, so I transformed the above data frame by replacing any entry greater than zero with the column name. For better organization, I wanted the non-zero entries in the leftmost columns. So, I transformed the data into a list, dropped the NANs, and put the list back into a dataframe, replacing the NANs with zeros. Finally, I one-hot-encoded the dataframe so that the unique bacteria names became the column names, and the samples had ones or zeros under each column to represent as to whether the sample contained that bacteria or not, respectively. 
+
+image 
+
+I split the data into training and testing sets using the same proportions as above. Then, I continued to perform both logistic regression and multinomial naive bayes on the same dataframe to compare the results. 
+
+## Model Evaluation 
+
+
+
+
+
+
+
+
+
 
