@@ -50,7 +50,7 @@ Per the instructions, I created another model that uses the same data frame that
 
 I saved the label and dropped it from the dataframe berfore performing the following steps. Multinomial Naives Bayes performs best on text data, so I transformed the above data frame by replacing any entry greater than zero with the column name. For better organization, I wanted the non-zero entries in the leftmost columns. So, I transformed the data into a list, dropped the NANs, and put the list back into a dataframe, replacing the NANs with zeros. Finally, I one-hot-encoded the dataframe so that the unique bacteria names became the column names, and the samples had ones or zeros under each column to represent as to whether the sample contained that bacteria or not, respectively. 
 
-image 
+![Final](/assets/images/logreg_mnnb.jpg) 
 
 I split the data into training and testing sets using the same proportions as above. Then, I continued to perform both logistic regression and multinomial naive bayes on the same dataframe to compare the results. 
 
