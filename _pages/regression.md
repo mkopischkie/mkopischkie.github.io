@@ -40,7 +40,7 @@ The maximum likelihood function maximizes the likelihood and log-likelihood equa
 
 Initially, I performed Logistic Regression on a numerical dataframe between the Healthy class and the Parkinsons class. Logistic Regression requires numerical, either float or integer, data types, and in this case, a binary classification label. Using the data from the final_df.csv file, I removed the unecessary conditions, apart from Health and Parkinsons. Then, I removed the Country and BMI columns, deleted any row with Age less than or equal to one, and mapped the male and female sex's to one and zero, respectively. Therefore, I was left with the Condition, or label, column, Sex, Age, and the bacterial genus' columns. 
 
-image 
+![Orig](/assets/images/log_reg_origdf.jpg)  
 
 To perform logistic regression, I split my data and kept 80% as the training and 20% as the testing set. Experimenting with my code, I found that the highest accuracy was achieved when I used an oversampling technique, SMOTE. SMOTE creates synthetic training data in the minority class so that the length of the minority and majority classes are equal. In this case, the algoirhtm created data to add to the Parkinsons class to match the length of the Health class. It is important to note that the oversampling is only performed on the training data and not the testing data. 
 
