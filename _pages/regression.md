@@ -46,7 +46,7 @@ To perform logistic regression, I split my data and kept 80% as the training and
 
 Per the instructions, I created another model that uses the same data frame that is used in Multinomial Naive Bayes. Again, I tested between the Health and Parkinsons classes, but dropped the columns that were not the bacterial genus'. 
 
-image
+![Final](/assets/images/final_df_clus.jpg) 
 
 I saved the label and dropped it from the dataframe berfore performing the following steps. Multinomial Naives Bayes performs best on text data, so I transformed the above data frame by replacing any entry greater than zero with the column name. For better organization, I wanted the non-zero entries in the leftmost columns. So, I transformed the data into a list, dropped the NANs, and put the list back into a dataframe, replacing the NANs with zeros. Finally, I one-hot-encoded the dataframe so that the unique bacteria names became the column names, and the samples had ones or zeros under each column to represent as to whether the sample contained that bacteria or not, respectively. 
 
