@@ -74,3 +74,11 @@ Before modeling a decision tree, all the dataframes needed to be split into trai
 | Psychological with Additional Attributes | 0.9333   | 
 
 
+## Conclusions 
+
+The decision trees performed very well on the different datasets. I think it's interesting the note the increase in accuracy between the psychological disorder data, and the psychological disorder data filtered to keep Age, BMI, and Sex. Even though some of the classes were lost in this filtering process, it points to the influence these factors have on the gut microbiome and corresponding neurological disorders. 
+
+
+
+
+
