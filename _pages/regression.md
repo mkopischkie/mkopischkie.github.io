@@ -60,7 +60,7 @@ The first model I tested used the data with float decimals with the classes Heal
 
 ![Final](/assets/images/log_reg_health_park.jpg) 
 
-The next models used the same data from multinomial naive bayes. In other words, the data is binary, indicating the presense of bacteria, or lack thereof. The logistic regression model with this data type obtained an accuracy of **1.0** and is pictured below. This accuracy may be misleading and I will discuss the implications in the next section. 
+The next models used the same data from multinomial naive bayes (text data). In other words, the data is binary, indicating the presense of bacteria, or lack thereof. The logistic regression model with this data type obtained an accuracy of **1.0** and is pictured below. This accuracy may be misleading and I will discuss the implications in the next section. 
 
 ![Final](/assets/images/log_reg_health_park_mnnb.jpg) 
 
@@ -70,6 +70,16 @@ I compared the above linear regression model to the multinomial naive bayes algo
 
 
 ## Conclusions
+
+The perfect accuracy from the models using text data may be due to several reasons. 
+
+1. A feature that is only present in one class and not the other. To visually support this, I created a boxplot and attached it below. I expect that the presence of a bacterial genus will not be constant across all individuals with unique neurological disorders. But, I believe the one-hot-encoding that was necessary to create the text data may have made these differences too contrasting.
+  ![Final](/assets/images/boxplots_sanitycheck.jpg)
+2. The taxonomy names may be unique to each condition. Over the past decade, the scientific names of bacteria have changed, even though they mean the same thing. For example, Escherichia coli was previously named Bacteriun coli. If the Health class calls it Bacteriun coli and the Parkinsons class calls it Escherichia coli, the algorithm will learn this pattern and automatically classify a sample based on this bacterium.
+3. Overfitting. The dataframe I used to perform these algorithms contained about 200 rows, which is likely too small to represent the entire population of healthy individuals and those with Parkinsons. In this case, if the algorithm is introduced to new data, it may not recognize the correct pattern and can misclassify it.
+4. Imbalanced data. The healthy class has about 100 more entries than the Parkinsons class, so the imbalanced classes may be affecting the algorithm. To address this, I tried using Random Over Sampling and SMOTE, to add more entries to the minority class, but neither had an affect on the accuracy. I also tried L1/L2 regularization and the elastic net combination, but still neither affected the accuracy. 
+
+The first model, using float point numerical data performed more reasonably and still gave a great accuracy. Since I did not see a perfect accuracy here, I don't believe there to be any features that are only present in one class and not the other. This leads me to believe that the second and third reasons for the perfect accuracy are the most likely. 
 
 
 
