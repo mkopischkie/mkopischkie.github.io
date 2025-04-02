@@ -65,7 +65,7 @@ The conditional probability formula states that we should divide these results b
 
 $$ P(Yes | Sunny, Weak) > P(No | Sunny, Weak) $$
 
-We conclude that we would play golf given that it is sunny with weak winds. 
+We conclude that we would play golf given that it is sunny with weak winds. One thing to note here, is the zero-frequency problem. We see that happen here in the probability of not playing golf given that it is sunny with weak winds. The problem is that the data we use is only a sample, not the whole population. In other words, there is an individual, outside of this dataset, that would not play golf given that it is sunny with weak winds. So, it is not fair to say that this probability is zero. The way the algorithm faces this problem is by Laplace smoothing, or adding one to the numerator and denominator of the corresponding probabilities. This doesn't impact which probability is largest because the algorithm scales every probability in this same way and therefore avoids the zero-frequency problem. 
 
 I will apply this algorithm to my dataset, combined_data_with_extra_data2.csv, which is a labeled record data dataframe. The label column, 'Golf' in the above example, has to be in the dataset for the probabilities to be calculated. This algorithm requires training and testing data, so I will split my dataframe to 80% training and 20% testing. The model training is necessary in Naive Bayes because without it, the model wouldn't have predetermined probabilities, including the prior, likelihood, and estimate probabilities. If implemented accurately, this algorithm should determine the probability of a particular neurological disorder, given the evidence/features present. 
 
@@ -179,5 +179,8 @@ Categorical Accuracy:
 | Psych Disorders | 0.8889   |  
 
 
+## Conclusions
+
+Overall, the best Naive Bayes model is the Categorical algorithm. Although Multinomial NB has a higher accuracy for the neurodegenerative disorders, Categorical NB has the highest accuracy for all the disorders and the psychological disorders. In general, I don't believe that using the text data, as used in MN NB, is the best for my dataset. In logistic regression between the Health and Parkinsons classes, I found a perfect accuracy, so I think a similar problem may happen to my data when using the text data here. Therefore, I trust my gaussian results the most even though they don't provide the highest accuracies. 
 
 
