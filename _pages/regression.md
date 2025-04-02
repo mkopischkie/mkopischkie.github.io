@@ -56,6 +56,20 @@ I split the data into training and testing sets using the same proportions as ab
 
 ## Model Evaluation 
 
+The first model I tested used the data with float decimals with the classes Health and Parkinsons. This Logistic Regression model obtained an accuracy of **0.8704** and is pictured below. 
+
+![Final](/assets/images/log_reg_health_park.jpg) 
+
+The next models used the same data from multinomial naive bayes. In other words, the data is binary, indicating the presense of bacteria, or lack thereof. The logistic regression model with this data type obtained an accuracy of **1.0** and is pictured below. This accuracy may be misleading and I will discuss the implications in the next section. 
+
+![Final](/assets/images/log_reg_health_park_mnnb.jpg) 
+
+I compared the above linear regression model to the multinomial naive bayes algorithm. Again, the accuracy is **1.0** and is pictured below. 
+
+![Final](/assets/images/mn_nb_health_park.jpg) 
+
+
+## Conclusions
 
 
 
