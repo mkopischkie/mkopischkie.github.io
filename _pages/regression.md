@@ -44,6 +44,18 @@ Initially, I performed Logistic Regression on a numerical dataframe between the 
 
 To perform logistic regression, I split my data and kept 80% as the training and 20% as the testing set. Experimenting with my code, I found that the highest accuracy was achieved when I used an oversampling technique, SMOTE. SMOTE creates synthetic training data in the minority class so that the length of the minority and majority classes are equal. In this case, the algoirhtm created data to add to the Parkinsons class to match the length of the Health class. It is important to note that the oversampling is only performed on the training data and not the testing data. 
 
+Using SMOTE alters the training and testing sets outside from the normal column and random sampling differences. It generates fake data that it thinks matches the minority class and resets the index. So, pictured below are samples of the training set with SMOTE. 
+
+| X_train (data)                        | y_train (label)                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Orig](/assets/images/x_train_over_smote.jpg) | ![Orig](/assets/images/y_train_over_smote.jpg) | 
+
+Although the testing set is not affected by SMOTE, I attached it below anywa. 
+
+| X_test (data)                        | y_test (label)                       |
+| -------------------------------------| ------------------------------------ |
+| ![Orig](/assets/images/x_test.jpg) | ![Orig](/assets/images/y_test.jpg) | 
+
 Per the instructions, I created another model that uses the same data frame that is used in Multinomial Naive Bayes. Again, I tested between the Health and Parkinsons classes, but dropped the columns that were not the bacterial genus'. 
 
 ![Final](/assets/images/final_df_clus.jpg) 
