@@ -21,6 +21,8 @@ Targeting the gut, rather than the brain, represents a promising frontier in the
 
 If successful, this approach will establish a clear link between neurological disorders and the gut microbiome. Testing these models with additional microbiota data will further validate their predictive capabilities, while highlighting the most prevalent or deficient bacteria associated with each disorder. These findings could serve as the foundation for developing personalized dietary recommendations, supplements, gut-targeted drug therapies, and predictive tools to assess an individual's neurological state.
 
+Recently, companies have promoted blood paneling to measure hormones for hormone replacement therapies, but as the gut is connected to the endocrine system, it follows that sampling the gut microbiome can offer the same benefits as blood paneling. Both these treatments can provide individualized medical intervention, but the gut microbiome can give physicians information on the gut bacteria-targeted medicine to prescribe. Targeting the gut microbiome for personalized medicine will be much more efficient than more pharmecuticals targetting the brain. The gut-brain axis provides direct access for gut-targeted medicine to the brain, contrary to the traditional pharmecuticals that have a difficult time crossing the blood brain barrier. Many companies that provide gut microbiome sampling already provide dietary recommendations to help an unhealthy gut become healthier. However, providing this predictive modeling as a tool for personalized medicine will be more efficient in providing preventative care. 
+
 
 
 **Questions to Guide the Research:** 
