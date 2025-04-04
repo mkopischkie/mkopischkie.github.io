@@ -83,7 +83,7 @@ There are various Naive Bayes algorithms to use including: Gaussian, Multinomina
 
 ![Orig](/assets/images/combined_df.jpg) 
 
-Then, I split the data into training and testing sets using the train_test_split function from scikit learn. The data I use to perform Gaussian NB is pictured below. 
+Then, I split the data into training and testing sets using the train_test_split function from scikit learn. The data I use to perform Gaussian NB is pictured below. Please note that the data pictured below is used to model Gaussian NB on all my data, so I also had to drop the columns Age, Sex, and BMI. Depedening on the classes I choose to model, I may or may not need to drop all these columns. 
 
 ![Final](/assets/images/final_df_clus.jpg)  
 
