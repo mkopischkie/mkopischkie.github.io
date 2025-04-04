@@ -37,7 +37,15 @@ After making changes to model a decision tree with all my data, my dataframe loo
 
 ![Orig](/assets/images/dt_alldata.jpg) 
 
-Then I split my data into a training and testing set and modeled the decision tree. The training and testing dataframes looked similar to the snapshots provided in the Naive Bayes tab. Where X_train is the data used and y_train are the corresponding labels. Each model has a unique training and testing dataframe that may be composed of more columns, including Age, BMI, or Sex, and will most likely have different rows of the data due to the random sampling of the train_test_split command. Again, the training and testing dataframes are disjoint due to the reasons listed in the Naive Bayes tab. 
+Then I split my data into a training and testing set and modeled the decision tree. The training and testing dataframes looked similar to the snapshots provided in the Naive Bayes tab. Where X_train is the data used and y_train are the corresponding labels. Each model has a unique training and testing dataframe that may be composed of more columns, including Age, BMI, or Sex, and will most likely have different rows of the data due to the random sampling of the train_test_split command. Again, the training and testing dataframes are disjoint due to the reasons listed in the Naive Bayes tab. For example, the training and testing sets used in the decision tree constructed with all the data is pictured below. Please note that different classes may contain additional columns such as Age, BMI, and/or Sex. 
+
+| X_train (data)                        | y_train (label)                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Orig](/assets/images/x_train_dt.jpg) | ![Orig](/assets/images/y_train_dt.jpg) | 
+
+| X_test (data)                        | y_test (label)                       |
+| -------------------------------------| ------------------------------------ |
+| ![Orig](/assets/images/x_test_dt.jpg) | ![Orig](/assets/images/y_test_dt.jpg) | 
 
 Next, I wanted to model the neurodegenerative disorders, so I filtered my original dataframe to keep only the Parkinson's, Alzheimers, and Health conditions. In this new dataframe, all the samples containing these disorders had entries for Sex and Age. To keep these attributes, I mapped Sex to numerical labels and removed the rows with an Age less than one. My final neurodegenerative disorder dataframe looks like this: 
 
