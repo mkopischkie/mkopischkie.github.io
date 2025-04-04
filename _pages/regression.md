@@ -82,6 +82,9 @@ The perfect accuracy from the models using text data may be due to several reaso
 The first model, using float point numerical data performed more reasonably and still gave a great accuracy. Since I did not see a perfect accuracy here, I don't believe there to be any features that are only present in one class and not the other. This leads me to believe that the second and third reasons for the perfect accuracy are the most likely. 
 
 
+## Model Comparison Between Logistic Regression, Decision Tree, Naive Bayes
+
+
 
 
 
