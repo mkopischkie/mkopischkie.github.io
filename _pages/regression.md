@@ -84,7 +84,11 @@ The first model, using float point numerical data performed more reasonably and 
 
 ## Model Comparison Between Logistic Regression, Decision Tree, Naive Bayes
 
+Overall, it appears that my decision tree model performed the best out of the three models required for this milestone. This indicates that my data partitions very well and splits effectively from measuring the entropy and gini impurity. In the scope of my project, this is a very positive sign that gut microbiota for individuals with a neurological disorder has clear differences between an invidividual with a different disorder. In particular, the neurological disorders obtained an accuracy above 0.98 for the decision trees. For a similar algorithm between the Health and Parkinsons classes in logistic regression, I was surprised to see an accuracy only around 0.87. 
 
+Similarly, the decision tree performed better in all marks compared to the gaussian naive bayes algorithm. Naive bayes is a generative model, whereas the decision tree is a discrimintive model. In other words, the naive bayes algorithm can generate data based on a specific label, and the decision tree understands the training data to predict a certain label. 
+
+This tells me that my data fits to non-parametric, discriminitive models best. So, the data may be too complex for an algorithm to generate data corresponding to the label, but measures such as entropy and the gini impurity splits the data heuristically very well. 
 
 
 
