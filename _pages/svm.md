@@ -56,6 +56,8 @@ K(x, x') &= (\gamma x \cdot x' + r)^d \\
 \end{align*}
 $$
 
+Often, this final equation will be transformed into a vector. In this case, the polynomial kernel would transform a points in two-dimensional space to a points in six-dimensional space. 
+
 
 ## Data Prep
 
