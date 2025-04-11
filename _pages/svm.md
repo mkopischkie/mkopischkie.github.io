@@ -34,8 +34,11 @@ Where w is the weight vector, x is a vector of the predictors, and b is a scalar
 
 The algorithm can accept different kernels, or tools to identify unique patterns 
 1. Linear: as the name implies, the linear kernel works best for data that can be linearly separated in higher-dimension space. The algorithm works in the same sized feature space as the data provided. It is quick and less prone to over fitting the high dimensional data.
+   ![Orig](/assets/images/linear_kernel.jpg)
 2. Polynomial: the algorithm transforms the data into a higher dimensional space where the decision boundaries are curved. Therefore, it can capture nonlinear patterns in the data. It's best to use this kernel if there may be interactive features in the data. In other words, when the effect of one variable modifies another. The user determines the complexity of the algorithm, but a larger complexity increases the chance of overfitting.
-3. RBF/Gaussian: the data is mapped to an infinite-dimension space where the decision boundaries are very flexible. This is the best general-purpose model for nonlinear and complex relationships in data. Instead of using the dot product, it uses the euclidean distance to measure the similarity between two points. The user can tune the parameters, but without caution, this can lead to overfitting. 
+   ![Orig](/assets/images/polynomial_kernel.jpg)
+3. RBF/Gaussian: the data is mapped to an infinite-dimension space where the decision boundaries are very flexible. This is the best general-purpose model for nonlinear and complex relationships in data. Instead of using the dot product, it uses the euclidean distance to measure the similarity between two points. The user can tune the parameters, but without caution, this can lead to overfitting.
+   ![Orig](/assets/images/rbf_kernel.jpg)
 
 
 
