@@ -45,6 +45,16 @@ $$ K(x^T, x') = (\gamma x^T \cdot x' + r)^d $$
 
 $$ K(x, x') = exp(=\gamma \left|\left| x - x'\right|\right|^2) $$
 
+To show an example of how we can cast a point into a higher dimension, I'll write out an example using the polynomial kernel with a constant of one and a two degree polynomial. 
+
+$$
+\begin{align*}
+K(x, x') &= (\gamma x \cdot x' + r)^d \\
+         &= (\gamma x \cdot x' + 1)^2 \\
+         &= (x_1 x_1' + x_2 x_2' + 1)^2 \\
+         &= x_1^2 {x_1'}^2 + x_2^2 {x_2'}^2 + 1 + 2 x_1 x_1' x_2 x_2' + 2 x_1 x_1' + 2 x_2 x_2'
+\end{align*}
+$$
 
 
 ## Data Prep
