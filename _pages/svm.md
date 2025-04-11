@@ -20,7 +20,7 @@ Initially, the algorithm computs the dot product between two vectors to gain ins
 
 Generally, SVM's try to separate the data with a plane through space. In two or three dimensions, the data may be linearly separable, as depicted in the image below. But often, a linear boundary will not separate the data well, so a non-linear hyperplane is necessary. 
 
-image 
+![Orig](/assets/images/svm1.jpg) 
 
 
 
