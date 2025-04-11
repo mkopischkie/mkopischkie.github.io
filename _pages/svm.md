@@ -5,6 +5,13 @@ layout: single
 classes: wide
 ---
 
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 ## Overview 
 
 A Support Vector Machine (SVM) is a supervised, non-parametric, and discriminitive, machine learning model. In other words, it learns from a training set of the data, does not assume any pre-existing relationships, and fits a data vector into a defined category. 
