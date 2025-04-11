@@ -26,7 +26,7 @@ Generally, SVM's try to separate the data with a plane through space. In two or 
 
 ![Orig](/assets/images/svm1.jpg) 
 
-In higher dimensions, rather than representing the hyperplane as a normal line equation, we rewrite it in terms of a matrix. 
+In higher dimensions, rather than representing the hyperplane as a normal line equation, we rewrite it in terms of vector multiplication and addition. 
 
 $$ w \cdot x + b = 0 $$
 
