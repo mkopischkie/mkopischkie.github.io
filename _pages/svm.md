@@ -38,9 +38,12 @@ The algorithm can accept different kernels, or tools to identify unique patterns
 $$ K(x^T, x') = x^T \cdot x' $$
 
 2. Polynomial: the algorithm transforms the data into a higher dimensional space where the decision boundaries are curved. Therefore, it can capture nonlinear patterns in the data. It's best to use this kernel if there may be interactive features in the data. In other words, when the effect of one variable modifies another. The user determines the complexity of the algorithm, but a larger complexity increases the chance of overfitting.
-   ![Orig](/assets/images/polynomial_kernel.jpg)
+
+$$ K(x^T, x') = (\gamma x^T \cdot x' + r)^d $$
+
 4. RBF/Gaussian: the data is mapped to an infinite-dimension space where the decision boundaries are very flexible. This is the best general-purpose model for nonlinear and complex relationships in data. Instead of using the dot product, it uses the euclidean distance to measure the similarity between two points. The user can tune the parameters, but without caution, this can lead to overfitting.
-   ![Orig](/assets/images/rbf_kernel.jpg)
+
+$$ K(x, x') = exp(=\gamma \left|\left| x - x'\right|\right|^2) $$
 
 
 
