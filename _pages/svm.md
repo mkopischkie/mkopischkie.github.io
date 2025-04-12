@@ -65,7 +65,22 @@ and I will perform this computation below.
 $$
 \begin{align*}
 K(x, x') &= x_1^2 {x_1'}^2 + x_2^2 {x_2'}^2 + 1 + 2 x_1 x_1' x_2 x_2' + 2 x_1 x_1' + 2 x_2 x_2'
-         &= \begin{pmatrix} x_1 \\ x_2 \\ \sqrt{2} x_1 x_2 \\ sqrt{2} x_1 \\ \sqrt{2} x_2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} x_1' \\ x_2' \\ \sqrt{2} x_1' x_2' \\ sqrt{2} x_1' \\ \sqrt{2} x_2' \\ 1 \end{pmatrix}
+         &= \begin{pmatrix}
+             x_1^2 \\
+             x_2^2 \\
+             \sqrt{2} x_1 x_2 \\
+             \sqrt{2} x_1 \\
+             \sqrt{2} x_2 \\
+             1
+         \end{pmatrix}^\top
+         \begin{pmatrix}
+             x_1'^2 \\
+             x_2'^2 \\
+             \sqrt{2} x_1' x_2' \\
+             \sqrt{2} x_1' \\
+             \sqrt{2} x_2' \\
+             1
+         \end{pmatrix}
 \end{align*}
 $$
 
