@@ -20,7 +20,9 @@ Initially, the algorithm computs the dot product between two vectors to gain ins
 
 $$x \cdot y = \left|\left|x\right|\right| \left|\left|y\right|\right| cos(\theta)$$
 
-where $\theta$ is the angle measured between the two vectors. 
+where 
+$\theta$
+is the angle measured between the two vectors. 
 
 Generally, SVM's try to separate the data with a plane through space. In two or three dimensions, the data may be linearly separable, as depicted in the image below. But often, a linear boundary will not separate the data well, so a non-linear hyperplane is necessary. 
 
@@ -56,7 +58,11 @@ K(x, x') &= (\gamma x \cdot x' + r)^d \\
 \end{align*}
 $$
 
-Now, we can rewrite this equation into the feature map function with vector notation. 
+Now, we can rewrite this equation into the feature map function with vector notation. Essentially, we want to write the above final equation in the form of
+$ K(x, x') = \phi(x) \cdot \phi(x')$
+and I will perform this computation below. 
+
+
 
 
 
