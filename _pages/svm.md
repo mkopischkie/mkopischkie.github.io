@@ -84,8 +84,11 @@ K(x, x') &= x_1^2 {x_1'}^2 + x_2^2 {x_2'}^2 + 1 + 2 x_1 x_1' x_2 x_2' + 2 x_1 x_
 \end{align*}
 $$
 
+Now we can see that this feature map will map a two-dimensional data points into six-dimensional space because there are six unique components in the feature-mapping vectors. 
 
+Another important thing to note about SVM's, is the way the decision boundary is drawn. The space from the decision boundary to the nearest datapoint on either sides is called the margin. And an SVM can either have a hard or soft margin. A hard margin indicates better separation of the data where all the data points of one class fall on one side, and the data belonging to the other class, falls on the other side. A soft margin on the other hand, allows a couple of data points to be on the wrong side. A soft margin could indicate nonlinear, complex relationships, or influential outliers. 
 
+I will use SVM's on the final_df.csv file to try to create a hyperplane through my data to classify a point as having a particular neurological disorder or not. 
 
 
 ## Data Prep
