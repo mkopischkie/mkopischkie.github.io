@@ -59,12 +59,12 @@ K(x, x') &= (\gamma x \cdot x' + r)^d \\
 $$
 
 Now, we can rewrite this equation into the feature map function with vector notation. Essentially, we want to write the above final equation in the form of 
-$K(x, x') = \phi(x) \cdot \phi(x')$
+$K(x, x') = \phi(x)^T \cdot \phi(x')$
 and I will perform this computation below. 
 
 $$
 \begin{align*}
-K(x, x') &= x_1^2 {x_1'}^2 + x_2^2 {x_2'}^2 + 1 + 2 x_1 x_1' x_2 x_2' + 2 x_1 x_1' + 2 x_2 x_2'
+K(x, x') &= x_1^2 {x_1'}^2 + x_2^2 {x_2'}^2 + 1 + 2 x_1 x_1' x_2 x_2' + 2 x_1 x_1' + 2 x_2 x_2' \\
          &= \begin{pmatrix}
              x_1^2 \\
              x_2^2 \\
