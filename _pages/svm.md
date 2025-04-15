@@ -153,27 +153,27 @@ Accuracies:
 
 1. Neurodegenerative with RBF kernel, C=10
 
-  | Confusion Matrix | Accuracy | 
-  |------------------|----------|
-  | Blank            | 0.7656   | 
+  | Confusion Matrix                                 | Accuracy | 
+  |--------------------------------------------------|----------|
+  | ![Orig](/assets/images/svm_neuro_rbf_graphs.jpg) | 0.7656   | 
    
 3. Neurodegenerative with Poly kernel, C=10
 
-  | Confusion Matrix | Accuracy | 
-  |------------------|----------|
-  | Blank            | 0.75     | 
+  | Confusion Matrix                                  | Accuracy | 
+  |---------------------------------------------------|----------|
+  | ![Orig](/assets/images/svm_neuro_poly_graphs.jpg) | 0.75     | 
   
 5. Neurodegenerative with Linear kernel, C=1
 
-  | Confusion Matrix | Accuracy | 
-  |------------------|----------|
-  | Blank            | 0.8438   | 
+  | Confusion Matrix                                | Accuracy | 
+  |-------------------------------------------------|----------|
+  | ![Orig](/assets/images/svm_neuro_c1_graphs.jpg) | 0.8438   | 
 
 6. Neurodegenerative with Linear kernel, C=100
 
-  | Confusion Matrix | Accuracy | 
-  |------------------|----------|
-  | Blank            | 0.9531   | 
+  | Confusion Matrix                                  | Accuracy | 
+  |---------------------------------------------------|----------|
+  | ![Orig](/assets/images/svm_neuro_c100_graphs.jpg) | 0.9531   | 
 
 ## Conclusions
 
