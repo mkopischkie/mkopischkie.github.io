@@ -155,25 +155,25 @@ Accuracies:
 
   | Confusion Matrix | Accuracy | 
   |------------------|----------|
-  | Blank            | blank    | 
+  | Blank            | 0.7656   | 
    
 3. Neurodegenerative with Poly kernel, C=10
 
   | Confusion Matrix | Accuracy | 
   |------------------|----------|
-  | Blank            | blank    | 
+  | Blank            | 0.75     | 
   
 5. Neurodegenerative with Linear kernel, C=1
 
   | Confusion Matrix | Accuracy | 
   |------------------|----------|
-  | Blank            | blank    | 
+  | Blank            | 0.8438   | 
 
 6. Neurodegenerative with Linear kernel, C=100
 
   | Confusion Matrix | Accuracy | 
   |------------------|----------|
-  | Blank            | blank    | 
+  | Blank            | 0.9531   | 
 
 ## Conclusions
 
