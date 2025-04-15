@@ -97,8 +97,31 @@ I will use SVM's on the final_df.csv file to try to create a hyperplane through 
 
 ## Data Prep
 
+Since SVMs work with complex math, the best data types are float and integer type numbers. For example, an SVM wouldn't perform as well with ordinal encoding, but it would perform better with one-hot-encoding. This has to do with the dot product computation, and interpreting a parallel or orthogonal dot product simplifies the classification more than a dot product of one and two that ordinal encoding may yield. 
 
+In my final_df.csv dataframe, the only encoding necessary was in the Sex column, which only had male or female entries. I encoded male as 1 and female as 0, for the reasons stated above. Otherwise, depending on what I'm modeling, the features were already float numbers, representing the relative abundance of a bacterial genus. I chose to model all disorders, neurodegenerative disorders, psychological disorders, and the disorders that maintained values for Sex, Age, and BMI. These disorders included a healthy control, 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', and 'Epilepsy'. The original dataframe is pictured below. 
 
+image
+
+To prepare the model containing all the neurological disorders, I dropped the Sex, Age, BMI, and Country columns because not every sample has entries for these attributes. I was left with the label and the relative abundances of the bacteria for each sample. I was also left with this same dataframe to model the psychological disorders, but the samples with diagnosed Parkinsons or Alzheimers were dropped. 
+
+image
+
+For modeling only the neurodegenerative disorders, I kept the Sex and Age column, but dropped BMI as many of the entries contained zero values. So, I was left with the label, Sex, Age, and the bacterial relative abundances for each sample. 
+
+image
+
+To model the disorders that maintain nonzero values for Sex, Age, and BMI, I filtered the final_df.csv dataframe for each. I dropped any sample that did not contain a valid entry for Sex, any sample that had an Age less than or equal to one, and any sample that had a BMI equal to zero. 
+
+image
+
+Each dataframe was split into an 80% training set and 20% testing set. Once again, the training and testing are mutually exclusive. In other words, no entry apart of the training set can also be included in the testing set. If this was not the case, the model would overfit and have an inflated accuracy from memorizing the data. In turn, it would not perform well on any new data that it has not yet seen. 
+
+image
+
+To find the optimal parameters where the SVM would perform the best on each dataset, I performed a GridSearchCV. The parameters that the model takes are the kernel and the C value. The C value is the regularization parameter that quantifies the balance between a low error and a large margin. A small C is a model that is more tolerant of misclassified data points, but maintains a large margin around the decision boundary. A large C prioritizes proper classification with high accuracy, rather than maintaining a large margin. Therefore, the area around the decision boundary is smaller. A model with a large C is more prone to overfitting and is not as generalizable. In my GridSearchCV, I performed cross-validation while fitting the data to a linear, poly, or rbf kernel, with possible regularization parameters as 0.1, 1, 10, or 100. Both dataframes composed of all the data and of only the psychological disorders performed best with an rbf kernel and a regularization parameter of 100. The neurological disorder dataframe, however, performed best with a linear kernel and a regularization parameter of 10. 
+
+With my four dataframes and corresponding parameters, I was able to fit the model to the data and obtained the results below. 
 
 
 ## Model Evaluation 
