@@ -101,11 +101,11 @@ Since SVMs work with complex math, the best data types are float and integer typ
 
 In my final_df.csv dataframe, the only encoding necessary was in the Sex column, which only had male or female entries. I encoded male as 1 and female as 0, for the reasons stated above. Otherwise, depending on what I'm modeling, the features were already float numbers, representing the relative abundance of a bacterial genus. I chose to model all disorders, neurodegenerative disorders, psychological disorders, and the disorders that maintained values for Sex, Age, and BMI. These disorders included a healthy control, 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', and 'Epilepsy'. The original dataframe is pictured below. 
 
-image
+![Orig](/assets/images/combined_df.jpg) 
 
 To prepare the model containing all the neurological disorders, I dropped the Sex, Age, BMI, and Country columns because not every sample has entries for these attributes. I was left with the label and the relative abundances of the bacteria for each sample. I was also left with this same dataframe to model the psychological disorders, but the samples with diagnosed Parkinsons or Alzheimers were dropped. 
 
-image
+![Orig](/assets/images/dt_alldata.jpg) 
 
 For modeling only the neurodegenerative disorders, I kept the Sex and Age column, but dropped BMI as many of the entries contained zero values. So, I was left with the label, Sex, Age, and the bacterial relative abundances for each sample. 
 
