@@ -153,56 +153,56 @@ Accuracies:
 
 1. Neurodegenerative with RBF kernel, C=1
 
-  | Confusion Matrix                                 | Accuracy | 
-  |--------------------------------------------------|----------|
+  | Confusion Matrix                                 | Classification Report | 
+  |--------------------------------------------------|-----------------------|
   | blank | blank    | 
 
 2. Neurodegenerative with RBF kernel, C=10
 
-  | Confusion Matrix                                 | Accuracy | 
-  |--------------------------------------------------|----------|
+  | Confusion Matrix                                 | Classification Report | 
+  |--------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_rbf_graphs.jpg) | ![Orig](/assets/images/svm_rbf_c10_report.jpg)   | 
    
 3. Neurodegenerative with RBF kernel, C=100
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_rbf_c100_graphs.jpg) | ![Orig](/assets/images/svm_rbf_c100_report.jpg) | 
 
 4. Neurodegenerative with Poly kernel, C=1
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_poly_c1_graphs.jpg) | ![Orig](/assets/images/svm_poly_c1_report.jpg)     | 
   
 5. Neurodegenerative with Poly kernel, C=10
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_poly_graphs.jpg) | ![Orig](/assets/images/svm_poly_c10_report.jpg)  | 
 
 6. Neurodegenerative with Poly kernel, C=100
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_poly_c100_graphs.jpg) | ![Orig](/assets/images/svm_poly_c100_report.jpg)     | 
   
 7. Neurodegenerative with Linear kernel, C=1
 
-  | Confusion Matrix                                | Accuracy | 
-  |-------------------------------------------------|----------|
+  | Confusion Matrix                                | Classification Report | 
+  |-------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_c1_graphs.jpg) | ![Orig](/assets/images/svm_linear_c1_report.jpg)   | 
 
 8. Neurodegenerative with Linear kernel, C=10
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_linear_c10_graphs.jpg) | ![Orig](/assets/images/svm_linear_c10_report.jpg)   | 
 
 9. Neurodegenerative with Linear kernel, C=100
 
-  | Confusion Matrix                                  | Accuracy | 
-  |---------------------------------------------------|----------|
+  | Confusion Matrix                                  | Classification Report | 
+  |---------------------------------------------------|-----------------------|
   | ![Orig](/assets/images/svm_neuro_c100_graphs.jpg) | ![Orig](/assets/images/svm_linear_c100_report.jpg)   | 
 
 ## Conclusions
