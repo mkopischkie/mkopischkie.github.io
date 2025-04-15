@@ -132,11 +132,11 @@ With my four dataframes and corresponding parameters, I was able to fit the mode
 
 ## Model Evaluation 
 
-1. SVM - all data
+1. SVM - all data (kernel = rbf, C=100)
    ![Orig](/assets/images/svm_alldata_graphs.jpg)
-2. SVM - neurodegenerative
+2. SVM - neurodegenerative (kernel = linear, C=10)
    ![Orig](/assets/images/svm_neuro_graphs.jpg)
-3. SVM - psychological
+3. SVM - psychological (kernel = rbf, C=100)
    ![Orig](/assets/images/svm_psych_graphs.jpg)
 4. SVM - w/ Age, BMI, Sex attributes 
 
@@ -151,25 +151,43 @@ Accuracies:
 
 ### Experimental Models 
 
-1. Neurodegenerative with RBF kernel, C=10
+1. Neurodegenerative with RBF kernel, C=1
+
+  | Confusion Matrix                                 | Accuracy | 
+  |--------------------------------------------------|----------|
+  | blank | blank    | 
+
+2. Neurodegenerative with RBF kernel, C=10
 
   | Confusion Matrix                                 | Accuracy | 
   |--------------------------------------------------|----------|
   | ![Orig](/assets/images/svm_neuro_rbf_graphs.jpg) | 0.7656   | 
    
-3. Neurodegenerative with Poly kernel, C=10
+3. Neurodegenerative with Poly kernel, C=1
+
+  | Confusion Matrix                                  | Accuracy | 
+  |---------------------------------------------------|----------|
+  | blank | blank     | 
+  
+4. Neurodegenerative with Poly kernel, C=10
 
   | Confusion Matrix                                  | Accuracy | 
   |---------------------------------------------------|----------|
   | ![Orig](/assets/images/svm_neuro_poly_graphs.jpg) | 0.75     | 
+
+5. Neurodegenerative with Poly kernel, C=100
+
+  | Confusion Matrix                                  | Accuracy | 
+  |---------------------------------------------------|----------|
+  | blank | blank     | 
   
-5. Neurodegenerative with Linear kernel, C=1
+6. Neurodegenerative with Linear kernel, C=1
 
   | Confusion Matrix                                | Accuracy | 
   |-------------------------------------------------|----------|
   | ![Orig](/assets/images/svm_neuro_c1_graphs.jpg) | 0.8438   | 
 
-6. Neurodegenerative with Linear kernel, C=100
+7. Neurodegenerative with Linear kernel, C=100
 
   | Confusion Matrix                                  | Accuracy | 
   |---------------------------------------------------|----------|
