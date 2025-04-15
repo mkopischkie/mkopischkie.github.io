@@ -155,7 +155,7 @@ Accuracies:
 
   | Confusion Matrix                                 | Classification Report | 
   |--------------------------------------------------|-----------------------|
-  | blank | blank    | 
+  | ![Orig](/assets/images/svm_neuro_rbf_c1_graphs.jpg) | ![Orig](/assets/images/svm_rbf_c1_report.jpg)    | 
 
 2. Neurodegenerative with RBF kernel, C=10
 
