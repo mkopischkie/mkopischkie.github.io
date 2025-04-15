@@ -109,11 +109,11 @@ To prepare the model containing all the neurological disorders, I dropped the Se
 
 For modeling only the neurodegenerative disorders, I kept the Sex and Age column, but dropped BMI as many of the entries contained zero values. So, I was left with the label, Sex, Age, and the bacterial relative abundances for each sample. 
 
-image
+![Orig](/assets/images/dt_neuro.jpg) 
 
 To model the disorders that maintain nonzero values for Sex, Age, and BMI, I filtered the final_df.csv dataframe for each. I dropped any sample that did not contain a valid entry for Sex, any sample that had an Age less than or equal to one, and any sample that had a BMI equal to zero. 
 
-image
+![Orig](/assets/images/dt_neurowsex.jpg) 
 
 Each dataframe was split into an 80% training set and 20% testing set. Once again, the training and testing are mutually exclusive. In other words, no entry apart of the training set can also be included in the testing set. If this was not the case, the model would overfit and have an inflated accuracy from memorizing the data. In turn, it would not perform well on any new data that it has not yet seen. An example of the training and testing sets from the dataframe containing all the neurological disorders is pictured below. Please note that for the dataframes containing additional attributes such as Sex, Age, or BMI, the training and testing sets would reflect this. 
 
