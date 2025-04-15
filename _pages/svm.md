@@ -115,9 +115,15 @@ To model the disorders that maintain nonzero values for Sex, Age, and BMI, I fil
 
 image
 
-Each dataframe was split into an 80% training set and 20% testing set. Once again, the training and testing are mutually exclusive. In other words, no entry apart of the training set can also be included in the testing set. If this was not the case, the model would overfit and have an inflated accuracy from memorizing the data. In turn, it would not perform well on any new data that it has not yet seen. 
+Each dataframe was split into an 80% training set and 20% testing set. Once again, the training and testing are mutually exclusive. In other words, no entry apart of the training set can also be included in the testing set. If this was not the case, the model would overfit and have an inflated accuracy from memorizing the data. In turn, it would not perform well on any new data that it has not yet seen. An example of the training and testing sets from the dataframe containing all the neurological disorders is pictured below. Please note that for the dataframes containing additional attributes such as Sex, Age, or BMI, the training and testing sets would reflect this. 
 
-image
+| X_train (data)                        | y_train (label)                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Orig](/assets/images/x_train_dt.jpg) | ![Orig](/assets/images/y_train_dt.jpg) | 
+
+| X_test (data)                        | y_test (label)                       |
+| -------------------------------------| ------------------------------------ |
+| ![Orig](/assets/images/x_test_dt.jpg) | ![Orig](/assets/images/y_test_dt.jpg) |
 
 To find the optimal parameters where the SVM would perform the best on each dataset, I performed a GridSearchCV. The parameters that the model takes are the kernel and the C value. The C value is the regularization parameter that quantifies the balance between a low error and a large margin. A small C is a model that is more tolerant of misclassified data points, but maintains a large margin around the decision boundary. A large C prioritizes proper classification with high accuracy, rather than maintaining a large margin. Therefore, the area around the decision boundary is smaller. A model with a large C is more prone to overfitting and is not as generalizable. In my GridSearchCV, I performed cross-validation while fitting the data to a linear, poly, or rbf kernel, with possible regularization parameters as 0.1, 1, 10, or 100. Both dataframes composed of all the data and of only the psychological disorders performed best with an rbf kernel and a regularization parameter of 100. The neurological disorder dataframe, however, performed best with a linear kernel and a regularization parameter of 10. 
 
