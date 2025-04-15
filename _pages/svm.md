@@ -167,7 +167,7 @@ Accuracies:
 
   | Confusion Matrix                                  | Accuracy | 
   |---------------------------------------------------|----------|
-  | blank | ![Orig](/assets/images/svm_rbf_c100_report.jpg) | 
+  | ![Orig](/assets/images/svm_neuro_rbf_c100_graphs.jpg) | ![Orig](/assets/images/svm_rbf_c100_report.jpg) | 
 
 4. Neurodegenerative with Poly kernel, C=1
 
@@ -197,7 +197,7 @@ Accuracies:
 
   | Confusion Matrix                                  | Accuracy | 
   |---------------------------------------------------|----------|
-  | blank | ![Orig](/assets/images/svm_linear_c10_report.jpg)   | 
+  | ![Orig](/assets/images/svm_neuro_linear_c10_graphs.jpg) | ![Orig](/assets/images/svm_linear_c10_report.jpg)   | 
 
 9. Neurodegenerative with Linear kernel, C=100
 
