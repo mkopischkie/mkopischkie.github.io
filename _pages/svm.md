@@ -132,8 +132,51 @@ With my four dataframes and corresponding parameters, I was able to fit the mode
 
 ## Model Evaluation 
 
+1. SVM - all data
+   ![Orig](/assets/images/svm_alldata_graphs.jpg)
+2. SVM - neurodegenerative
+   ![Orig](/assets/images/svm_neuro_graphs.jpg)
+3. SVM - psychological
+   ![Orig](/assets/images/svm_psych_graphs.jpg)
+4. SVM - w/ Age, BMI, Sex attributes 
 
+Accuracies: 
 
+| Model                 | Accuracy |
+|-----------------------|----------|
+| All data              | 0.8789   |
+| Neurodegenerative     | 0.9531   | 
+| Psychological         | 0.8586   | 
+| Additional Attributes | blank    |
 
+### Experimental Models 
+
+1. Neurodegenerative with RBF kernel, C=10
+
+  | Confusion Matrix | Accuracy | 
+  |------------------|----------|
+  | Blank            | blank    | 
+   
+3. Neurodegenerative with Poly kernel, C=10
+
+  | Confusion Matrix | Accuracy | 
+  |------------------|----------|
+  | Blank            | blank    | 
+  
+5. Neurodegenerative with Linear kernel, C=1
+
+  | Confusion Matrix | Accuracy | 
+  |------------------|----------|
+  | Blank            | blank    | 
+
+6. Neurodegenerative with Linear kernel, C=100
+
+  | Confusion Matrix | Accuracy | 
+  |------------------|----------|
+  | Blank            | blank    | 
 
 ## Conclusions
+
+
+
+
