@@ -31,7 +31,22 @@ Different from bagging or boosting, stacking uses two or more different models t
 
 ## Data Prep 
 
+Random Forests, similar to Decision Trees, require the same data format. They handle continuous, and categorical variables, mapped to integers, very well. I fit the random forest model to a dataframe with all the neurological conditions and to another dataframe with only the neurodegenerative conditions. The neurodegenerative conditions were able to maintain the Sex and Age columns, so I remapped the Sex column to binary integers. Then, I could split my data into training and testing sets. The training data emcompassed 80% of the data. The training and testing sets must be mutually exclusive because if a model sees the same data it was trained on, it will overfit, inflate the accuracy, and perform poorly on new data. 
 
+Before transformations, my dataframe is pictured below. 
+
+image
+
+
+After transformations for all the neurological disorders, my dataframe is pictured below. 
+
+image
+
+
+After transformations for the neurodegenerative disorders, my dataframe is pictured below.
+
+
+image
 
 
 
