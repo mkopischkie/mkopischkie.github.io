@@ -67,10 +67,12 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
 
 3. XGBoost w/ all data
    ![Orig](/assets/images/xgb_alldata_graphs.jpg)
+   
    ![Orig](/assets/images/xgb_feature_importance.jpg)
 
-4. XGBoost Neurodegenerative
+5. XGBoost Neurodegenerative
    ![Orig](/assets/images/xbg_neuro_graphs.jpg)
+   
    ![Orig](/assets/images/xgb_neuro_feature_importance.jpg)
 
 Accuracies: 
