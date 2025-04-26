@@ -60,8 +60,27 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
 ## Model Evaluation 
 
 1. Random Forest w/ all data
-   ![Orig](/assets/images/x_test_dt.jpg)
+   ![Orig](/assets/images/rf_alldata_graphs.jpg)
 
+2. Random Forest Neurodegenerative
+   ![Orig](/assets/images/rf_neuro_graphs.jpg)
+
+3. XGBoost w/ all data
+   ![Orig](/assets/images/xgb_alldata_graphs.jpg)
+   ![Orig](/assets/images/xgb_feature_importance.jpg)
+
+4. XGBoost Neurodegenerative
+   ![Orig](/assets/images/xgboost_neuro_graphs.jpg)
+   ![Orig](/assets/images/xgboost_neuro_feature_importance.jpg)
+
+Accuracies: 
+
+| Model | Accuracy | 
+|-------|----------|
+| RF w/ all data | 0.9255 |
+| RF w/ neuro | 1.0 |
+| XGBoost w/ all data | 0.9193 |
+| XGBoost w/ neuro | 0.9688 | 
 
 
 ## Conclusions
