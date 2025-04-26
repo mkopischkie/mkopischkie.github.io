@@ -86,3 +86,12 @@ Accuracies:
 
 
 ## Conclusions
+
+There's a couple of really exciting conclusions to draw from these models. First, the random forest fit to the neurodegenerative disorders returns an accuracy of 100%. An accuray of 100% is unlikely, but not impossible. I figured that I would see a very high accuracy here since the decision tree fit to the same data returned an accuracy over 98%. Generally, random forests outperform decision trees because of the ensemble component. They essentially have a bootstrap and cross-validation component to them so that they follow the best path. However, the high accuaracy may suggest that the model overfit the data and won't perform well on data that it sees in the future. 
+
+Next, the XGBoost package in scikit-learn has a best feature selection, so I was easily able to plot the most influential feature. When I used this feature on all the data, I didn't get anything that I didn't expect. I figured the Bacteroids would have a high importance because the final chart on the data visualization section of the website, mimicks this. The Bacteroids are the first feature on all the plots, indicating that the abundance may be very influential in modeling neurological disorders from the gut microbiome. 
+
+However, the feature importance graph for the neurodegenerative disorders did surprise me. By default, the graph models the first 15 features, as we see in the previous graph, but this one only shows four. This means that the other features were essentially irrelevant in predicting healthy, Parkinsons, or Alzheimers. The three genus' and age had the most significance in the neurodegenerative model performance. On a larger scale, recognizing this could reduce the amount of data needed to be retained in future samples to model the gut microbiome, decreasing the computational power and complexity. It also implies that three bacterial genus' could be a factor in developing Parkinsons and/or Alzheimers. This could have implications on the diagnosis and treatment of these neurodegenerative disorders. The model could be expanded to include more neurodegenerative disorders, features, and samples to increase the prediction accuracy. 
+
+
+
