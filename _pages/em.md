@@ -37,16 +37,17 @@ Before transformations, my dataframe is pictured below.
 
 image
 
-
 After transformations for all the neurological disorders, my dataframe is pictured below. 
 
 image
 
-
 After transformations for the neurodegenerative disorders, my dataframe is pictured below.
 
-
 image
+
+Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works best on continuous features and can handle binary or multiclass classification. Because of this, I used the same data transformations as above to model all the neurological disorders and the neurodegenerative disorders. Attached below are images of my training and testing sets for the neurological and neurodegenerative dataframes. 
+
+image 
 
 
 
