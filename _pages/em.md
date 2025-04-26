@@ -68,7 +68,7 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
 3. XGBoost w/ all data
    ![Orig](/assets/images/xgb_alldata_graphs.jpg)
    
-   ![Orig](/assets/images/xgb_feat_imp_good.jpg)
+   ![Orig](/assets/images/xbg_feat_imp_good.jpg)
 
 5. XGBoost Neurodegenerative
    ![Orig](/assets/images/xbg_neuro_graphs.jpg)
