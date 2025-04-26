@@ -45,9 +45,15 @@ After transformations for the neurodegenerative disorders, my dataframe is pictu
 
 ![Orig](/assets/images/dt_neuro.jpg) 
 
-Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works best on continuous features and can handle binary or multiclass classification. Because of this, I used the same data transformations as above to model all the neurological disorders and the neurodegenerative disorders. Attached below are images of my training and testing sets for the neurological and neurodegenerative dataframes. 
+Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works best on continuous features and can handle binary or multiclass classification. Because of this, I used the same data transformations as above to model all the neurological disorders and the neurodegenerative disorders. Attached below are images of my training and testing sets for the neurological dataframe. Please note that the dataframe for neurodegenerative disorder would look similar, but would have Sex and Age as columns. The splits may not be the exact same due to random selection, but the format would look the same.  
 
-image 
+| X_train (data)                        | y_train (label)                       |
+| ------------------------------------- | ------------------------------------- |
+| ![Orig](/assets/images/x_train_dt.jpg) | ![Orig](/assets/images/y_train_dt.jpg) | 
+
+| X_test (data)                        | y_test (label)                       |
+| -------------------------------------| ------------------------------------ |
+| ![Orig](/assets/images/x_test_dt.jpg) | ![Orig](/assets/images/y_test_dt.jpg) | 
 
 
 
