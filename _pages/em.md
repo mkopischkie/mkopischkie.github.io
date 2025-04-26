@@ -59,7 +59,8 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
 
 ## Model Evaluation 
 
-
+1. Random Forest w/ all data
+   ![Orig](/assets/images/x_test_dt.jpg)
 
 
 
