@@ -99,7 +99,7 @@ I will use SVM's on the final_df.csv file to try to create a hyperplane through 
 
 Since SVMs work with complex math, the best data types are float and integer type numbers. For example, an SVM wouldn't perform as well with ordinal encoding, but it would perform better with one-hot-encoding. This has to do with the dot product computation, and interpreting a parallel or orthogonal dot product simplifies the classification more than a dot product of one and two that ordinal encoding may yield. 
 
-In my final_df.csv dataframe, the only encoding necessary was in the Sex column, which only had male or female entries. I encoded male as 1 and female as 0, for the reasons stated above. Otherwise, depending on what I'm modeling, the features were already float numbers, representing the relative abundance of a bacterial genus. I chose to model all disorders, neurodegenerative disorders, psychological disorders, and the disorders that maintained values for Sex, Age, and BMI. These disorders included a healthy control, 'Bipolar Disorder, Depression, Schizophrenia', 'Bipolar Disorder, Depression, Epilepsy, Schizophrenia', 'Bipolar Disorder', and 'Epilepsy'. The original dataframe is pictured below. 
+In my final_df.csv dataframe, the only encoding necessary was in the Sex column, which only had male or female entries. I encoded male as 1 and female as 0, for the reasons stated above. Otherwise, depending on what I'm modeling, the features were already float numbers, representing the relative abundance of a bacterial genus. I chose to model all disorders, neurodegenerative disorders, and psychological disorders. The original dataframe is pictured below. 
 
 ![Orig](/assets/images/combined_df.jpg) 
 
@@ -111,9 +111,6 @@ For modeling only the neurodegenerative disorders, I kept the Sex and Age column
 
 ![Orig](/assets/images/dt_neuro.jpg) 
 
-To model the disorders that maintain nonzero values for Sex, Age, and BMI, I filtered the final_df.csv dataframe for each. I dropped any sample that did not contain a valid entry for Sex, any sample that had an Age less than or equal to one, and any sample that had a BMI equal to zero. 
-
-![Orig](/assets/images/dt_neurowsex.jpg) 
 
 Each dataframe was split into an 80% training set and 20% testing set. Once again, the training and testing are mutually exclusive. In other words, no entry apart of the training set can also be included in the testing set. If this was not the case, the model would overfit and have an inflated accuracy from memorizing the data. In turn, it would not perform well on any new data that it has not yet seen. An example of the training and testing sets from the dataframe containing all the neurological disorders is pictured below. Please note that for the dataframes containing additional attributes such as Sex, Age, or BMI, the training and testing sets would reflect this. 
 
@@ -138,7 +135,6 @@ With my four dataframes and corresponding parameters, I was able to fit the mode
    ![Orig](/assets/images/svm_neuro_graphs.jpg)
 3. SVM - psychological (kernel = rbf, C=100)
    ![Orig](/assets/images/svm_psych_graphs.jpg)
-4. SVM - w/ Age, BMI, Sex attributes 
 
 Accuracies: 
 
@@ -147,7 +143,6 @@ Accuracies:
 | All data              | 0.8789   |
 | Neurodegenerative     | 0.9531   | 
 | Psychological         | 0.8586   | 
-| Additional Attributes | blank    |
 
 ### Experimental Models 
 
@@ -207,6 +202,8 @@ Accuracies:
 
 ## Conclusions
 
+Overall, the different SVMs fit the data quite well. The GridSearhCV parameters returned accuracies all over 85%. One thing I find interesting is that the neurodegenerative dataframe with a linear kernel with costs 10 and 100. The interesting thing here is that the confusion matricies are different. The kernel with a cost of 10 has one false negative and the kernel with a cost of 100 has three false positives. Given the scope of this project, the confusion matrix with the fewest false negatives is most likely better model. A false negative means that someone who does have a neurological disorder, returns a negative test, indicating that they would not have the disorder. In a real scenario, false negatives mean that someone who needs treatment, is not getting it. 
 
+In this case, to model the neurodegenerative disorders, a linear kernel with a cost of 100 is probably the best model, even though the GridSearchCV recommended otherwise. In the future, the best way to handle this may be with a cost matrix, where false negatives are more heavily penalized than false positives. Or, manually setting weights to avoid false negative predictions. 
 
 
