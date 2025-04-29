@@ -45,6 +45,8 @@ After transformations for the neurodegenerative disorders, my dataframe is pictu
 
 ![Orig](/assets/images/dt_neuro.jpg) 
 
+The label column, Condition, was mapped to categorical integers. The reason for this is because most machine learning models in Python require that format and won't recognize words or names. 
+
 Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works best on continuous features and can handle binary or multiclass classification. Because of this, I used the same data transformations as above to model all the neurological disorders and the neurodegenerative disorders. Attached below are images of my training and testing sets for the neurological dataframe. Please note that the dataframe for neurodegenerative disorder would look similar, but would have Sex and Age as columns. The splits may not be the exact same due to random selection, but the format would look the same.  
 
 | X_train (data)                        | y_train (label)                       |
@@ -55,7 +57,7 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
 | -------------------------------------| ------------------------------------ |
 | ![Orig](/assets/images/x_test_dt.jpg) | ![Orig](/assets/images/y_test_dt.jpg) | 
 
-
+Using Random Forest and XGBoost, I hope to increase the accuracies I found with decision trees by using an emsemble method. As a reminder, random forests work in parallel, constructing small trees that were bootstrapped and sampled with replacement. The reported accuracy is usually a mean of all the accuracies from the smaller trees. XGBoost on the other hand, works sequentially, constructing a small decision tree by sampling without replacement, calculating the accuracy, adjusting the weights for the next tree, and calculating the accuracy for the next tree. 
 
 ## Model Evaluation 
 
