@@ -75,7 +75,7 @@ Next, I performed XGBoost on both dataframes mentioned above. XGBoost also works
    
    ![Orig](/assets/images/xgb_neuro_feat_imp_good.jpg)
 
-Accuracies: 
+**Accuracies:**
 
 | Model | Accuracy | 
 |-------|----------|
