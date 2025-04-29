@@ -5,7 +5,7 @@ layout: single
 classes: wide
 ---
 
-The research I've provided implies that there is a strong relationship between the gut microbiome and neurological disorders. I mainly modeled neurodegenerative, psychological, and a combination of those disorders. The reason for these datasets is because I intent to create a model capable of distinguishing between multiple disorders, not just between a healthy control and a disorder. However, clustering and using PCA between a healthy control and a single neurological disorder indicated that the data would split very well. 
+The research I've provided implies that there is a strong relationship between the gut microbiome and neurological disorders. I mainly modeled neurodegenerative, psychological, and a combination of those disorders. The reason for these datasets is because I intend to create a model capable of distinguishing between multiple disorders, not just between a healthy control and a disorder. However, clustering and using PCA between a healthy control and a single neurological disorder indicated that the data would split very well. 
 
 | Clustering | Boxplot | 
 | ---------- | ------- |
