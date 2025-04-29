@@ -79,10 +79,10 @@ Accuracies:
 
 | Model | Accuracy | 
 |-------|----------|
-| RF w/ all data | 0.9255 |
-| RF w/ neuro | 1.0 |
-| XGBoost w/ all data | 0.9193 |
-| XGBoost w/ neuro | 0.9688 | 
+| RF w/ all data | ![Orig](/assets/images/rf_alldata_report.jpg) |
+| RF w/ neuro | ![Orig](/assets/images/rf_neuro_report.jpg) |
+| XGBoost w/ all data | ![Orig](/assets/images/xgb_alldata_report.jpg) |
+| XGBoost w/ neuro | ![Orig](/assets/images/xgb_neuro_report.jpg) | 
 
 
 ## Conclusions
