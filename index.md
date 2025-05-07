@@ -21,7 +21,7 @@ Additional group and individual projects are listed below, with further details,
   <iframe src="https://drive.google.com/file/d/17WaUfI13jmPWquofK78cywPHVwLsF2BE/preview" width="640" height="480" allow="autoplay"></iframe>
   
 - Statistical Methods 2: Applied appropriate statistical techniques to analyze a dataset using Simple Linear Regression (SLR), Multiple Linear Regression (MLR), Generalized Linear Models (GLM), and Generalized Additive Models (GAM)
-- 
+
   <iframe src="https://drive.google.com/file/d/1TYFo5EL_uW88FGnFZ5aICMZemwgd9l9S/preview" width="640" height="480" allow="autoplay"></iframe>
   
 - Data Mining: Predicting the Success of Start-Up Companies in the Information and Technology Space
