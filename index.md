@@ -17,6 +17,9 @@ As part of my graduate program, I've taken courses in data mining, statistics, m
 
 Additional group and individual projects are listed below, with further details, and additional projects/assignments, available in the GitHub repository linked to my profile.
 - Big Data Archiecture: Coffee Catalog. I contributed to the Frontend UX/UI Development using Typescript, React, and Next.js
+
+  <iframe src="https://drive.google.com/file/d/17WaUfI13jmPWquofK78cywPHVwLsF2BE/preview" width="640" height="480" allow="autoplay"></iframe>
+
 - Data Mining: Predicting the Success of Start-Up Companies in the Information and Technology Space
   [Website](https://wihi1131.github.io/Data-Mining-Project/)
 - Statistical Methods 1: Principal Component Analysis (PCA) By Hand and Application in Python
