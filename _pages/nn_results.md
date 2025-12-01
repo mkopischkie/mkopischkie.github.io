@@ -7,8 +7,9 @@ classes: wide
 
 Overall, the model results were fairly poor, but with continued hyperparamter tuning and incorporating more data could significantly improve results. The LSTM gave only a 20% accuracy with a loss of 2.5. The confusion matrix also showed poor results and showed that the model was not learning very well. 
 
-cm image
-graph image
+![Orig](/assets/images/lstm_loss_accuracy.png)
+
+![Orig](/assets/images/lstm_cm.png)
 
 This can be due to several reasons including: 
 
