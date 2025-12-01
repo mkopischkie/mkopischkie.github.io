@@ -11,9 +11,9 @@ header_image: /assets/images/header.jpg
 <img src="{{ page.header_image }}" alt="Header Image" style="width: 100%; height: 400px; object-fit: cover;">
 
 
-This portfolio showcases a selection of coding projects I've worked on during my graduate studies. I hold a BS in Biophysics and am currently pursuing an MS in Data Science at the University of Colorado - Boulder. The website tabs feature my current project, developed in Python, as part of my Machine Learning coursework.
+This portfolio showcases a selection of coding projects I've worked on during my graduate studies. I hold a BS in Biophysics and am currently pursuing an MS in Data Science at the University of Colorado - Boulder. The website tabs feature my current projects, developed in Python, as part of my Machine Learning and Neural Networks coursework.
 
-As part of my graduate program, I've taken courses in data mining, statistics, machine learning, and big data architecture, with upcoming classes in deep learning, natural language processing, database systems, and design/analysis of algorithms. I will graduate in December 2025 and am excited to continue growing my expertise while sharing select projects here.
+As part of my graduate program, I've taken courses in data mining, statistics, machine learning, big data architecture, neural networks, applied deep learning, topics in neurosymbolic AI, and design/analysis of algorithms. I am graduating in December 2025 and am excited to continue growing my expertise while sharing select projects here.
 
 Additional group and individual projects are listed below, with further details, and additional projects/assignments, available in the GitHub repository linked to my profile.
 - Big Data Archiecture: Coffee Catalog. I contributed to the Frontend UX/UI Development using Typescript, React, and Next.js
