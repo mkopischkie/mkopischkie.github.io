@@ -21,8 +21,6 @@ The network has a memory by using gates to determine which information is added 
 
 With a better understanding of how LSTMs work, I began filtering the inputs. The PubChem BioAssay database contained thousands of entries, but I decided to use 1000 entries. My data contains 1000 representations of chemical compounds with the labels as GHS hazards. The goal is to predict the toxicity of synthetized compounds based solely on the molecular structure. I built a simple LSTM using PyTorch where the sequential model contains an embedding layer, bidirectional, dropout, and a dense layer. The embedding layer means that each integer in the inputs is embedded into an n-directional space. This is helpful to see how similar a word, or in this case an integer, is to another word, or integer. For example, the words yogurt and milk have more similarity and overlap than yogurt and steak. An embedding would ensure that the words yogurt and milk are close together. In my model, I use a 64-dimensional embedding so that each integer is represented as a 64-dimensional vector. 
 
-embedding video
-
 The bidirectional specification tells the models to read the data vector forwards and backwards, ensuring that each vector is read forwards and backwards to retain context clues. A dropout layer is used to help prevent a neural network from overfitting by randomly selecting a percentage of weights to set to zero for each epoch. Finally, the dense layer uses the softmax axtivation to assign each input 8 probabilities of belonging to a particular class. 
 
 ![Orig](/assets/images/lstm_summary.png)
